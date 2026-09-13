@@ -15,7 +15,7 @@ Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria pág
 | `07-charset-certo.html` | O mesmo documento com `utf-8`: o acento aparece. |
 | `08-regioes-semanticas.html` | `header`, `main` e `footer`. |
 | `09-mesmas-caixas-com-div.html` | As mesmas caixas com `div`. Compare o resultado com o anterior. |
-| `10-titulos-e-paragrafos.html` | Hierarquia de títulos: `h1`, `h2`, `h3`. |
+| `10-titulos-e-paragrafos.html` | Os seis níveis de título, de `h1` a `h6`, com um parágrafo em cada. Repare que `h5` e `h6` aparecem menores que o parágrafo: a tag é hierarquia, não tamanho. |
 | `11-listas.html` | `ul` com `li` (lista sem ordem, com marcadores) e `ol` com `li` (lista ordenada, com números). Compare os dois no navegador. |
 | `12-links.html` | `a href`: link externo, menu dentro de `nav` e link interno. O link interno aponta para `#produtos`; quem recebe o salto é o `h2 id="produtos"` mais abaixo. |
 | `13-imagens-e-alt.html` | `img` com `src` e `alt`. Os arquivos não existem de propósito: o que aparece é o `alt`. |
