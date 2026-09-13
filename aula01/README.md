@@ -2,6 +2,8 @@
 
 Exemplos mostrados em sala, na ordem em que apareceram nos slides. Cada arquivo é um documento HTML completo e independente: abra no editor para ler e no navegador para ver o resultado.
 
+> Estes exemplos são pedaços de HTML, sem `head` nem `body` — só os de número 05, 06, 07 e 14 são documentos completos. Isso tem uma consequência prática: no Live Server, os pedaços **não recarregam sozinhos** quando você salva (aparece o aviso *"Live Reload is not possible without a head or body tag"*), e aí é recarregar a aba na mão. O seu `index.html`, que é um documento completo, recarrega sozinho normalmente.
+
 Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria página. Para **ver rodando**: copie o arquivo para o seu repositório `agrofeira-<seu-usuário>`, abra-o no Codespaces de lá, clique em **Go Live** na barra inferior (extensão *Live Server*) e depois em **Open in Browser**.
 
 | Arquivo | O que mostra |
