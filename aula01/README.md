@@ -22,6 +22,7 @@ Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria pág
 | `12-links.html` | `a href`: link externo, menu dentro de `nav` e link interno. O link interno aponta para `#produtos`; quem recebe o salto é o `h2 id="produtos"` mais abaixo. |
 | `13-imagens-e-alt.html` | `img` com `src` e `alt`. Os arquivos não existem de propósito: o que aparece é o `alt`. |
 | `14-o-head-completo.html` | As três linhas do `head`: `meta charset`, `meta viewport` e `title`. |
+| `15-uma-pagina-completa.html` | A página *Sobre* inteira: o `head` completo, as quatro regiões, título, texto, menu, link externo e imagem com `alt`. É o exemplo de como um documento fica quando todas as peças estão no lugar. |
 
 ## Experimente
 
@@ -30,4 +31,5 @@ Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria pág
 - Em `12`, apague o `id="produtos"` e clique no menu de novo: o link para de funcionar.
 - Em `13`, troque o `alt` por uma descrição melhor e recarregue.
 
-O documento completo da AgroFeira não está aqui: escrevê-lo é a Atividade 1.
+A **home** da AgroFeira não está aqui, e é de propósito: montá-la é a Atividade 1. O exemplo 15 é outra
+página do mesmo site — serve para você ver um documento completo por dentro, não para copiar.
