@@ -16,7 +16,7 @@ Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria pág
 | `08-regioes-semanticas.html` | `header`, `main` e `footer`. |
 | `09-mesmas-caixas-com-div.html` | As mesmas caixas com `div`. Compare o resultado com o anterior. |
 | `10-titulos-e-paragrafos.html` | Hierarquia de títulos: `h1`, `h2`, `h3`. |
-| `11-listas.html` | `ul` e `li`. |
+| `11-listas.html` | `ul` com `li` (lista sem ordem, com marcadores) e `ol` com `li` (lista ordenada, com números). Compare os dois no navegador. |
 | `12-links.html` | `a href`: link externo, menu dentro de `nav` e link interno. O link interno aponta para `#produtos`; quem recebe o salto é o `h2 id="produtos"` mais abaixo. |
 | `13-imagens-e-alt.html` | `img` com `src` e `alt`. Os arquivos não existem de propósito: o que aparece é o `alt`. |
 | `14-o-head-completo.html` | As três linhas do `head`: `meta charset`, `meta viewport` e `title`. |
