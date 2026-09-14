@@ -1,10 +1,10 @@
 # Aula 1 — A Web como plataforma
 
-Exemplos mostrados em sala, na ordem em que apareceram nos slides. Cada arquivo é um documento HTML completo e independente: abra no editor para ler e no navegador para ver o resultado.
+Exemplos mostrados em sala, na ordem em que apareceram nos slides. Clique em qualquer arquivo: o GitHub mostra o código na própria página, que é tudo de que você precisa hoje.
 
-> Estes exemplos são pedaços de HTML, sem `head` nem `body` — só os de número 05, 06, 07 e 14 são documentos completos. Isso tem uma consequência prática: no Live Server, os pedaços **não recarregam sozinhos** quando você salva (aparece o aviso *"Live Reload is not possible without a head or body tag"*), e aí é recarregar a aba na mão. O seu `index.html`, que é um documento completo, recarrega sozinho normalmente.
+> A maioria destes exemplos é um **pedaço** de HTML, sem `head` nem `body`: eles mostram uma peça de cada vez. Os documentos completos são os de número 05, 06, 07, 14 e 15 — e o seu `index.html` tem que ser um documento completo como esses.
 
-Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria página. Para **ver rodando**: copie o arquivo para o seu repositório `agrofeira-<seu-usuário>`, abra-o no Codespaces de lá, clique em **Go Live** na barra inferior (extensão *Live Server*) e depois em **Open in Browser**.
+Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria página. E é só isso — **não copie exemplo nenhum para o seu `agrofeira-<seu-usuário>`**: lá vai só o que você escrever. Ver um arquivo rodando direto do editor entra no encontro 2.
 
 | Arquivo | O que mostra |
 |---|---|
@@ -25,6 +25,8 @@ Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria pág
 | `15-uma-pagina-completa.html` | A página *Sobre* inteira: o `head` completo, as quatro regiões, título, texto, menu, link externo e imagem com `alt`. É o exemplo de como um documento fica quando todas as peças estão no lugar. |
 
 ## Experimente
+
+> Estas comparações pedem os exemplos abertos no navegador, o que entra no encontro 2, quando instalarmos a extensão que mostra o resultado na hora. Hoje, leia o código aqui e compare com as imagens dos slides.
 
 - Abra `06` e `07` lado a lado e troque uma linha por vez.
 - Abra `08` e `09` no navegador. São iguais na tela — e diferentes para um leitor de tela, para um buscador e para quem for manter o código.

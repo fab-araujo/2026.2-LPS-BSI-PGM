@@ -8,7 +8,7 @@ Material de apoio da disciplina: os exemplos mostrados em sala e o ponto de part
 ## Como usar este repositório
 
 1. **Faça um fork.** No alto à direita desta página, clique em **Fork**. Isso cria uma cópia deste repositório na sua conta; o original fica intacto.
-2. **Leia os exemplos aqui mesmo.** Entre em `aula01/exemplos/` e clique em qualquer arquivo: o GitHub mostra o código na própria página. Para ver o resultado no navegador, copie o arquivo para o seu repositório e use o **Live Server** de lá.
+2. **Leia os exemplos aqui mesmo.** Entre em `aula01/exemplos/` e clique em qualquer arquivo: o GitHub mostra o código na própria página. É assim que se lê um exemplo no encontro 1 — sem copiar nada para lugar nenhum. A única página que você abre no navegador hoje é a **sua**, no endereço público do GitHub Pages.
 3. **Este fork é material de consulta, não é onde você trabalha.** O seu site é escrito no *seu* repositório (`agrofeira-<seu-usuário>`), e é nele que você abre o Codespaces — um codespace pertence a um repositório só.
 4. **Pare o codespace ao terminar**, em [github.com/codespaces](https://github.com/codespaces). A cota corre por tempo ligado.
 
