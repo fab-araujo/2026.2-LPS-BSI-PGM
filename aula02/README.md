@@ -54,7 +54,7 @@ As cinco imagens que as páginas da Atividade 2 usam, já no tamanho certo. O ro
 | `feira-330.jpg` | 330 × 247 | Foto: Rayelle da Silva Freitas, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Barraca_de_Frutas_e_Legumes_na_Feira_Livre_de_Jacobina.jpg) |
 | `feira-1280.jpg` | 1280 × 960 | A mesma foto, em tamanho maior |
 | `cupuacu.jpg` | 330 × 247 | Foto: BjoernS, [CC BY-SA 2.0 DE](https://creativecommons.org/licenses/by-sa/2.0/de/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cupuacu_fruit_opened.jpg) |
-| `lupa.png` | 250 × 250 | Domínio público, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Magnifying_glass_icon.svg) |
+| `lupa.png` | 40 × 40 | Domínio público, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Magnifying_glass_icon.svg) |
 | `enfeite.png` | 330 × 93 | Domínio público, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bullokar%27s_A_Short_Introduction_-_fleuron_with_flowers.svg) |
 
 As duas fotos pedem crédito, e ele vai escrito na página, junto de cada foto.
