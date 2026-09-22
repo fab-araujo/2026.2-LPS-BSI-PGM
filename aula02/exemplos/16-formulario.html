@@ -1,0 +1,23 @@
+<form>
+  <label for="nome">Nome do produtor</label>
+  <input type="text" id="nome" name="nome">
+
+  <label for="cidade">Cidade</label>
+  <select id="cidade" name="cidade">
+    <option>Paragominas</option>
+    <option>Ulianópolis</option>
+  </select>
+
+  <label for="obs">Observações</label>
+  <textarea id="obs" name="obs" rows="2"></textarea>
+
+  <fieldset>
+    <legend>Como prefere receber o pedido?</legend>
+    <label><input type="radio" name="entrega" value="feira"> Retirar na feira</label>
+    <label><input type="radio" name="entrega" value="casa"> Receber em casa</label>
+  </fieldset>
+
+  <label><input type="checkbox" name="aceite" value="1"> Aceito as regras da feira</label>
+
+  <button type="submit">Enviar cadastro</button>
+</form>

@@ -1,0 +1,11 @@
+<form>
+  <label for="qtd2">Quantidade (unid. inteiras)</label>
+  <input type="number" id="qtd2" name="qtd2"
+         required min="1" max="500" step="1">
+
+  <label for="lote2">Código do lote (ex.: PA1234)</label>
+  <input type="text" id="lote2" name="lote2"
+         required pattern="[A-Z]{2}[0-9]{4}">
+
+  <button type="submit">Enviar</button>
+</form>

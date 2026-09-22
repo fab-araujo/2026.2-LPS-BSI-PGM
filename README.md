@@ -7,7 +7,7 @@ Material de apoio da disciplina: os exemplos mostrados em sala e o ponto de part
 
 ## Como usar este repositório
 
-1. **Leia os exemplos aqui mesmo.** Entre em `aula01/exemplos/` e clique em qualquer arquivo: o GitHub mostra o código na própria página. É assim que se lê um exemplo no encontro 1 — sem copiar nada para lugar nenhum. A única página que você abre no navegador hoje é a **sua**, no endereço público do GitHub Pages.
+1. **Leia os exemplos aqui mesmo.** Entre na pasta `exemplos/` da aula e clique em qualquer arquivo: o GitHub mostra o código na própria página — sem copiar nada para lugar nenhum. A página que você abre no navegador é a **sua**, no endereço público do GitHub Pages.
 2. **Este repositório é material de consulta, não é onde você trabalha** — e é também aqui que você tira dúvida sobre um exemplo. O seu site é escrito no *seu* repositório (`agrofeira-<seu-usuário>`), e é nele que você abre o Codespaces — um codespace pertence a um repositório só.
 3. **Pare o codespace ao terminar**, em [github.com/codespaces](https://github.com/codespaces). A cota corre por tempo ligado.
 
@@ -29,3 +29,4 @@ O estado final de cada aula — isto é, a solução da atividade — só é pub
 | Encontro | Tema | Pasta |
 |---|---|---|
 | 1 | A Web como plataforma | [`aula01/`](aula01/) |
+| 2 | HTML5 que significa alguma coisa | [`aula02/`](aula02/) |
