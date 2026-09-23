@@ -9,7 +9,7 @@ Duas pastas:
 
 Clique em qualquer arquivo: o GitHub mostra o código na própria página. É o mesmo código do slide, sem tirar nem pôr.
 
-> A maioria destes exemplos é um **pedaço** de HTML, sem `head` nem `body`: eles mostram uma peça de cada vez. Os documentos completos são os de número 01 e 27 — e cada página da Atividade 2 tem que ser um documento completo.
+> A maioria destes exemplos é um **pedaço** de HTML, sem `head` nem `body`: eles mostram uma peça de cada vez. Os documentos completos são os de número 01 e 29 — e cada página da Atividade 2 tem que ser um documento completo.
 
 As imagens citadas nos exemplos (`tomate.jpg`, `cesta-320.jpg`, `lupa.svg` e as outras) não estão na pasta, de propósito, como na Aula 1. Nos slides, o lugar de cada uma aparece como um retângulo colorido com o nome do arquivo.
 
@@ -24,26 +24,28 @@ Estes exemplos são para **ler**, não para copiar: no seu `agrofeira-<seu-usuá
 | `05-titulos-paragrafo-enfase.html` | Títulos em três níveis, parágrafos, `strong` (importância) e `em` (ênfase). |
 | `06-listas-e-citacao.html` | `ul`, `ol` e `dl` (lista de definição, com `dt` e `dd`), e `blockquote` para citação. |
 | `07-links-e-ancoras.html` | Link para outra página (`produtos.html`) e link para um ponto da mesma página (`#sobre`), que salta até o `id="sobre"`. |
-| `08-tabela-base.html` | A base de toda tabela: `table`, `tr` (linha) e `td` (célula). |
-| `09-tabela-caption.html` | A mesma tabela com `caption`: a tabela ganha um nome. |
-| `10-tabela-thead-tbody-th.html` | `thead` e `tbody`, e `th` com `scope="col"` (cabeçalho de coluna) e `scope="row"` (cabeçalho de linha). |
-| `11-imagem-no-conteudo.html` | `img` com `src`, `width`, `height` e `alt`, dentro de um `article`. |
-| `12-picture-e-figure.html` | `picture` com dois `source` (`srcset` com a largura de cada arquivo e `sizes`), o `img` de reserva com `loading="lazy"`, tudo dentro de `figure` com `figcaption`. |
-| `13-alt-informativo-e-decorativo.html` | Uma imagem que informa (o `alt` descreve) e uma que só enfeita (`alt=""`). |
-| `14-alt-funcional.html` | Um botão que só tem ícone: o `alt` diz a ação, não o desenho. |
-| `15-alt-complexo.html` | Um gráfico: o `alt` diz o que ele é, e a `figcaption` conta o que ele mostra. |
-| `16-formulario.html` | `form`, `label` com `for`, `input`, `select` com `option`, `textarea`, `fieldset` com `legend`, botões de escolha (`radio`), caixa de marcar (`checkbox`) e `button`. |
-| `17-campo-de-texto.html` | O campo mais simples: `label` e `input type="text"`. |
-| `18-tipos-de-campo.html` | `type="email"`, `"tel"`, `"number"` e `"date"`; `autocomplete` e `inputmode`. |
-| `19-fieldset-legend.html` | Campos agrupados por assunto, com o nome do grupo na `legend`. |
-| `20-validacao-nativa.html` | `required`, `min`, `max`, `step` e `pattern`: o navegador barra o envio sem nenhuma linha de script. |
-| `21-details-summary.html` | Um acordeão sem script: dois `details` com o mesmo `name`, e abrir um fecha o outro. |
-| `22-dialog.html` | A caixa de diálogo nativa, aberta com o atributo `open`. |
-| `23-link-de-pular.html` | O link de pular para o conteúdo: o primeiro link da página, apontando para o `id` do `main`. |
-| `24-rotulo-associado.html` | O `for` do `label` igual ao `id` do campo: é isso que liga os dois. |
-| `25-aria-minimo.html` | `aria-label`, `aria-describedby` e `aria-current`. |
-| `26-regiao-viva.html` | Uma região com `role="status"` e `aria-live="polite"`, que anuncia sem interromper. Hoje ela fica vazia. |
-| `27-dois-erros-para-o-validador.html` | Um documento com dois erros de propósito (imagem sem `alt` e `id` repetido), para você ver o que o validador do W3C diz de cada um. |
+| `08-id-e-class.html` | `class`: o mesmo nome em vários elementos, marcando um grupo. Na tela, nada muda — e é isso mesmo. |
+| `09-tabela-base.html` | A base de toda tabela: `table`, `tr` (linha) e `td` (célula). |
+| `10-tabela-caption.html` | A mesma tabela com `caption`: a tabela ganha um nome. |
+| `11-tabela-thead-tbody-th.html` | `thead` e `tbody`, e `th` com `scope="col"` (cabeçalho de coluna) e `scope="row"` (cabeçalho de linha). |
+| `12-imagem-no-conteudo.html` | `img` com `src`, `width`, `height` e `alt`, dentro de um `article`. |
+| `13-picture-e-figure.html` | `picture` com dois `source` (`srcset` com a largura de cada arquivo e `sizes`), o `img` de reserva com `loading="lazy"`, tudo dentro de `figure` com `figcaption`. |
+| `14-alt-informativo-e-decorativo.html` | Uma imagem que informa (o `alt` descreve) e uma que só enfeita (`alt=""`). |
+| `15-alt-funcional.html` | Um botão que só tem ícone: o `alt` diz a ação, não o desenho. |
+| `16-alt-complexo.html` | Um gráfico: o `alt` diz o que ele é, e a `figcaption` conta o que ele mostra. |
+| `17-formulario.html` | `form`, `label` com `for`, `input`, `select` com `option`, `textarea`, `fieldset` com `legend`, botões de escolha (`radio`), caixa de marcar (`checkbox`) e `button`. Todo rótulo, inclusive o dos botões de escolha e o da caixa de marcar, é ligado ao campo pelo par `for` / `id`. |
+| `18-name-e-value.html` | `name` (o nome com que o valor viaja no envio) e `value` (o valor de cada opção); a primeira opção, com `value` vazio, quer dizer "nada escolhido". |
+| `19-campo-de-texto.html` | O campo mais simples: `label` e `input type="text"`. |
+| `20-tipos-de-campo.html` | `type="email"`, `"tel"`, `"number"` e `"date"`; `autocomplete` e `inputmode`. |
+| `21-fieldset-legend.html` | Campos agrupados por assunto, com o nome do grupo na `legend`. |
+| `22-validacao-nativa.html` | `required`, `min`, `max`, `step` e `pattern`: o navegador barra o envio sem nenhuma linha de script. |
+| `23-details-summary.html` | Um acordeão sem script: dois `details` com o mesmo `name`, e abrir um fecha o outro. |
+| `24-dialog.html` | A caixa de diálogo nativa, aberta com o atributo `open`. |
+| `25-link-de-pular.html` | O link de pular para o conteúdo: o primeiro link da página, apontando para o `id` do `main`. |
+| `26-rotulo-associado.html` | O `for` do `label` igual ao `id` do campo: é isso que liga os dois. |
+| `27-aria-minimo.html` | `aria-label`, `aria-describedby` e `aria-current`. |
+| `28-regiao-viva.html` | Um parágrafo com `role="status"` e `aria-live="polite"`, que anuncia sem interromper. Hoje ele fica vazio. |
+| `29-dois-erros-para-o-validador.html` | Um documento com dois erros de propósito (imagem sem `alt` e `id` repetido), para você ver o que o validador do W3C diz de cada um. |
 
 ## `inicio/`
 
