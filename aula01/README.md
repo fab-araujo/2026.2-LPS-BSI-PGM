@@ -4,7 +4,7 @@ Exemplos mostrados em sala, na ordem em que apareceram nos slides. Clique em qua
 
 > A maioria destes exemplos é um **pedaço** de HTML, sem `head` nem `body`: eles mostram uma peça de cada vez. Os documentos completos são os de número 05, 06, 07, 14 e 15 — e o seu `index.html` tem que ser um documento completo como esses.
 
-Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria página. E é só isso — **não copie exemplo nenhum para o seu `agrofeira-<seu-usuário>`**: lá vai só o que você escrever. Ver um arquivo rodando direto do editor entra no encontro 2.
+Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria página. E é só isso — **não copie exemplo nenhum para o seu `agrofeira-<seu-usuário>`**: lá vai só o que você escrever. Ver um arquivo rodando direto do codespace entra no encontro 8.
 
 | Arquivo | O que mostra |
 |---|---|
@@ -26,12 +26,12 @@ Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria pág
 
 ## Experimente
 
-> Estas comparações pedem os exemplos abertos no navegador, o que entra no encontro 2, quando instalarmos a extensão que mostra o resultado na hora. Hoje, leia o código aqui e compare com as imagens dos slides.
+> Estas comparações pedem os exemplos abertos no navegador, o que entra no encontro 8, quando o site passa a ser servido de dentro do próprio codespace. Até lá, leia o código aqui e compare com as imagens dos slides.
 
 - Abra `06` e `07` lado a lado e troque uma linha por vez.
 - Abra `08` e `09` no navegador. São iguais na tela — e diferentes para um leitor de tela, para um buscador e para quem for manter o código.
 - Em `12`, apague o `id="produtos"` e clique no menu de novo: o link para de funcionar.
 - Em `13`, troque o `alt` por uma descrição melhor e recarregue.
 
-A **home** da AgroFeira não está aqui, e é de propósito: montá-la é a Atividade 1. O exemplo 15 é outra
+A **home** da AgroFeira não está aqui, e é de propósito: montá-la é a Atividade 1, cujo roteiro está em [`atividade01/`](atividade01/). O exemplo 15 é outra
 página do mesmo site — serve para você ver um documento completo por dentro, não para copiar.

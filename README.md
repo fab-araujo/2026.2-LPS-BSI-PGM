@@ -18,11 +18,12 @@ O passo a passo ilustrado está na **apostila de GitHub**, no SIGAA.
 Uma pasta por encontro. Dentro de cada uma:
 
 - `exemplos/` — o que foi mostrado na aula, para você abrir e mexer;
-- `inicio/` — quando houver: o estado de que a aula parte, mais o material entregue pronto. É daqui que continua quem faltou ou empacou.
+- `inicio/` — quando houver: o estado de que a aula parte, mais o material entregue pronto. É daqui que continua quem faltou ou empacou;
+- `atividadeNN/` — quando houver: o roteiro da atividade do encontro, o mesmo do SIGAA.
 
 ## O que **não** está aqui
 
-O estado final de cada aula — isto é, a solução da atividade — só é publicado **depois** do prazo de entrega. O que você precisa produzir está descrito no roteiro da atividade, no SIGAA, e o trabalho é seu.
+O estado final de cada aula — isto é, a solução da atividade — só é publicado **depois** do prazo de entrega. O que você precisa produzir está descrito no roteiro da atividade — no SIGAA e, quando houver, na pasta `atividadeNN/` da aula —, e o trabalho é seu.
 
 ## Aulas
 
