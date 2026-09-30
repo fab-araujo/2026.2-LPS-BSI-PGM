@@ -1,13 +1,13 @@
 # ⚠️ SOLUÇÃO DA ATIVIDADE 1
 
-> **Esta pasta é a solução da Atividade 1**, publicada depois do prazo de entrega. Se você ainda está fazendo a atividade, pare aqui e volte ao [roteiro](../atividade01/).
+> **Esta pasta é a solução da Atividade 1**, publicada depois do prazo de entrega. Se você ainda está fazendo a atividade, pare aqui e volte ao roteiro, no SIGAA.
 
 A solução tem duas partes, como a atividade: o documento (`index.html`) e o que se esperava em cada item do relatório.
 
 ## O documento
 
 - O código: [`index.html`](index.html).
-- A página no ar: <https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula01/solucao-atividade01/>.
+- A página no ar: <https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula01/solucao_atividade_aula01/>.
 
 É **uma** resposta possível. O texto e os produtos da sua podiam ser outros — o conteúdo era escolha sua. O que a correção olhava é a estrutura, e ela é esta:
 

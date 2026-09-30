@@ -1,10 +1,9 @@
 # Aula 1 — A Web como plataforma
 
-Três pastas:
+Duas pastas:
 
 - `exemplos/` — os exemplos mostrados em sala, na ordem em que apareceram nos slides;
-- [`atividade01/`](atividade01/) — o roteiro da Atividade 1;
-- [`solucao-atividade01/`](solucao-atividade01/) — ⚠️ **a solução da Atividade 1**, publicada depois do prazo de entrega.
+- [`solucao_atividade_aula01/`](solucao_atividade_aula01/) — ⚠️ **a solução da Atividade 1**, publicada depois do prazo de entrega.
 
 ## `exemplos/`
 
@@ -41,9 +40,9 @@ Para **ler**: clique no arquivo aqui no GitHub, que ele aparece na própria pág
 - Em `12`, apague o `id="produtos"` e clique no menu de novo: o link para de funcionar.
 - Em `13`, troque o `alt` por uma descrição melhor e recarregue.
 
-A **home** da AgroFeira não está entre os exemplos: montá-la é a Atividade 1, cujo roteiro está em [`atividade01/`](atividade01/). O exemplo 15 é outra
+A **home** da AgroFeira não está entre os exemplos: montá-la é a Atividade 1, cujo roteiro está no SIGAA. O exemplo 15 é outra
 página do mesmo site — serve para você ver um documento completo por dentro, não para copiar.
 
 ## ⚠️ Solução da Atividade 1
 
-A pasta [`solucao-atividade01/`](solucao-atividade01/) tem **a solução da Atividade 1**: o `index.html` de uma home possível e o que se esperava em cada item do relatório. Ela foi publicada depois do prazo de entrega — se você ainda está fazendo a atividade, não abra.
+A pasta [`solucao_atividade_aula01/`](solucao_atividade_aula01/) tem **a solução da Atividade 1**: o `index.html` de uma home possível e o que se esperava em cada item do relatório. Ela foi publicada depois do prazo de entrega — se você ainda está fazendo a atividade, não abra.
