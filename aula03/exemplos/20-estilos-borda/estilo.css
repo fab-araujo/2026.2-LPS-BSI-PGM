@@ -1,0 +1,15 @@
+p {
+  padding: 8px;
+}
+
+.continua {
+  border: 3px solid darkgoldenrod;
+}
+
+.tracejada {
+  border: 3px dashed darkgoldenrod;
+}
+
+.pontilhada {
+  border: 3px dotted darkgoldenrod;
+}

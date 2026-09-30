@@ -1,0 +1,6 @@
+.cartao-produto {
+  border: 1px solid lightgray;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px gray;
+}

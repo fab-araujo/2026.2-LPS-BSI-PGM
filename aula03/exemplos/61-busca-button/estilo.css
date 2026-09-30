@@ -1,0 +1,6 @@
+.busca button {
+  background-color: var(--cor-marca);
+  border: none;
+  border-radius: var(--raio);
+  padding: 0.5em;
+}

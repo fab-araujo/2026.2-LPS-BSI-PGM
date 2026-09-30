@@ -1,0 +1,8 @@
+body {
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+}
+
+p {
+  max-width: 34rem;
+}

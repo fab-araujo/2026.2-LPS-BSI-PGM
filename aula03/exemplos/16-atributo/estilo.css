@@ -1,0 +1,7 @@
+[type="email"] {
+  background-color: lightyellow;
+}
+
+[required] {
+  background-color: lightblue;
+}

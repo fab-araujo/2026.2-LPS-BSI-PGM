@@ -1,0 +1,13 @@
+:root {
+  --cor-marca: #9a3412;
+  --cor-sobre-marca: #ffffff;
+}
+
+h1 {
+  color: var(--cor-marca);
+}
+
+.botao {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+}

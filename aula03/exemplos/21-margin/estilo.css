@@ -1,0 +1,15 @@
+body {
+  background-color: lightblue;
+  margin: 0;
+}
+
+.aviso {
+  background-color: lightyellow;
+  padding: 16px;
+  border: 2px solid darkgoldenrod;
+}
+
+.recuado {
+  margin-left: 48px;
+  margin-right: 48px;
+}

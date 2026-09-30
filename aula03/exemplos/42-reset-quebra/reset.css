@@ -1,0 +1,7 @@
+/* 6. Palavra comprida quebra, em vez de estourar */
+p,
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,17 @@
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.lora {
+  font-family: "Lora", serif;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.caveat {
+  font-family: "Caveat", cursive;
+}

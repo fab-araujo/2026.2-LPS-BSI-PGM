@@ -1,0 +1,13 @@
+body {
+  font-family: system-ui, sans-serif;
+  padding: 1.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}

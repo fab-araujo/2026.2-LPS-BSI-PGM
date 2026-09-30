@@ -1,0 +1,12 @@
+body {
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+}
+
+.apertado {
+  line-height: 1.1;
+}
+
+.folgado {
+  line-height: 1.6;
+}

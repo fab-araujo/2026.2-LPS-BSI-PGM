@@ -1,0 +1,7 @@
+/* 5. Campo e botão com a mesma letra do texto */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

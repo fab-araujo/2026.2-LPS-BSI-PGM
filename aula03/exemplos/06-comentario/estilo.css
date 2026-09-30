@@ -1,0 +1,5 @@
+/* Parágrafo em vermelho escuro,
+   para chamar a atenção */
+p {
+  color: darkred;
+}
