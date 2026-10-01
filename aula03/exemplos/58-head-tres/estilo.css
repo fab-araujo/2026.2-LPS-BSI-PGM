@@ -1,0 +1,9 @@
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding: 1rem;
+}
+
+h1 {
+  color: var(--cor-marca);
+}

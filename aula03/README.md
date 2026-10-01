@@ -7,7 +7,7 @@ Duas pastas:
 
 ## `exemplos/`
 
-Cada exemplo é uma **pasta** com um documento completo: o `index.html` e as folhas que ele liga — o `estilo.css` e, a partir do bloco do reset, também o `reset.css` e o `tokens.css`. Entre na pasta e clique no arquivo: o GitHub mostra o código na própria página. É o mesmo código do slide; quando o slide mostra só um trecho de uma folha, a pasta tem a folha inteira.
+Cada exemplo é uma **pasta** com um documento completo: o `index.html` e as folhas que ele liga. As folhas entram na ordem dos slides: o `estilo.css` a partir do exemplo 03; o `reset.css` a partir do bloco do reset — nos exemplos 38 a 42, só com o bloco que o slide mostra; do 43 em diante, a folha inteira —; e o `tokens.css` a partir do bloco dos tokens, no 57. Entre na pasta e clique no arquivo: o GitHub mostra o código na própria página. É o mesmo código do slide; fora do reset dos exemplos 38 a 42, quando o slide mostra só um trecho de uma folha, a pasta tem a folha inteira.
 
 Cada pasta também abre no navegador, já com o estilo, no endereço do GitHub Pages deste repositório: `https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula03/exemplos/` seguido do nome da pasta — por exemplo, <https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula03/exemplos/03-primeira-regra/>. Com o F12 aberto nessa página, dá para ver no painel de estilos tudo o que o slide mostrou.
 
@@ -57,13 +57,13 @@ Estes exemplos são para **ler**, não para copiar: no seu `agrofeira-<seu-usuá
 | `40-reset-imagem` | Bloco 4 do reset: a imagem nunca maior que o espaço dela. |
 | `41-reset-campos` | Bloco 5 do reset: campo e botão com a letra do texto. |
 | `42-reset-quebra` | Bloco 6 do reset: a palavra comprida quebra em vez de estourar a caixa. |
-| `43-reset-ordem` | O `head` com o `reset.css` antes do `estilo.css`. |
-| `44-font-family` | `font-family` com a letra do sistema e o plano B, antes e depois. |
+| `43-reset-ordem` | O `head` com o `reset.css` antes do `estilo.css`. No painel, com o `body` selecionado, o `line-height: 1.6` do `estilo.css` vence, e o `1.5` do reset aparece riscado. |
+| `44-font-family` | `font-family` com a letra do sistema e o plano B. O antes, com a letra de fábrica, está no slide. |
 | `45-fontes-web` | Três fontes do Google Fonts ligadas por um `<link>`, ao lado da letra do sistema. |
 | `46-escala` | A escala dos títulos: `2.25rem`, `1.5rem` e `1rem`. |
 | `47-peso` | `font-weight: 400` tira o negrito de fábrica de um título. |
 | `48-peso-altura` | O mesmo título e o mesmo parágrafo com altura de linha `1.1` e `1.6`. |
-| `49-line-height-unidade` | `line-height` com unidade (`24px`) e sem unidade (`1.5`): com unidade, as linhas do título se sobrepõem. |
+| `49-line-height-unidade` | `line-height` com unidade (`24px`) e sem unidade (`1.5`): com unidade, as linhas do título se sobrepõem. Estreite a janela até o título quebrar em duas linhas: numa linha só, não há o que sobrepor. |
 | `50-medida` | `max-width: 34rem` no parágrafo: a linha deixa de ir de uma borda à outra. |
 | `51-ritmo` | O espaço entre título e texto com as margens de `h2` e `p`. |
 | `52-notacoes` | A mesma cor escrita por nome, em hexadecimal e em `rgb()`. |
