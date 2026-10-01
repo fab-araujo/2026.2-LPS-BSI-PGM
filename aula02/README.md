@@ -1,9 +1,10 @@
 # Aula 2 — HTML5 que significa alguma coisa
 
-Duas pastas:
+Três pastas:
 
 - `exemplos/` — os exemplos mostrados em sala, na ordem em que apareceram nos slides;
-- `inicio/` — as cinco imagens da Atividade 2, prontas no tamanho certo.
+- `inicio/` — as cinco imagens da Atividade 2, prontas no tamanho certo;
+- [`solucao_atividade_aula02/`](solucao_atividade_aula02/) — ⚠️ **a solução da Atividade 2**, publicada depois do prazo de entrega.
 
 ## `exemplos/`
 
@@ -60,3 +61,7 @@ As cinco imagens que as páginas da Atividade 2 usam, já no tamanho certo. O ro
 | `enfeite.png` | 330 × 93 | Domínio público, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bullokar%27s_A_Short_Introduction_-_fleuron_with_flowers.svg) |
 
 As duas fotos pedem crédito, e ele vai escrito na página, junto de cada foto.
+
+## ⚠️ Solução da Atividade 2
+
+A pasta [`solucao_atividade_aula02/`](solucao_atividade_aula02/) tem **a solução da Atividade 2**: as quatro páginas de um site possível, com as imagens, e o que se esperava em cada item do relatório. Ela foi publicada depois do prazo de entrega — se você ainda está fazendo a atividade, não abra.

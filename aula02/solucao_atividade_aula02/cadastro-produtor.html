@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- SOLUÇÃO DA ATIVIDADE 2: uma resposta possível, publicada depois do prazo de entrega. -->
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AgroFeira — cadastro de produtor</title>
+    </head>
+    <body>
+        <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+        <header class="cabecalho-site">
+            <h1>AgroFeira</h1>
+            <nav aria-label="Principal">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="safra.html">Safra</a></li>
+                    <li><a href="cadastro-produtor.html" aria-current="page">Cadastro de produtor</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="conteudo">
+            <h2>Cadastro de produtor</h2>
+            <form class="formulario-cadastro">
+                <fieldset>
+                    <legend>Quem é você</legend>
+                    <p><label for="nome">Nome completo</label> <input type="text" id="nome" name="nome" autocomplete="name" required></p>
+                    <p><label for="email">E-mail</label> <input type="email" id="email" name="email" autocomplete="email" required></p>
+                    <p><label for="telefone">Telefone</label> <input type="tel" id="telefone" name="telefone" autocomplete="tel"></p>
+                    <p><label for="caf">Número do CAF</label> <input type="text" id="caf" name="caf"></p>
+                    <p><label for="cep">CEP da propriedade</label> <input type="text" id="cep" name="cep" inputmode="numeric" pattern="[0-9]{5}-?[0-9]{3}" aria-describedby="dica-cep"> <span id="dica-cep">Formato: 00000-000</span></p>
+                </fieldset>
+                <fieldset>
+                    <legend>O que você vende</legend>
+                    <p><label for="produto">Produto principal</label>
+                        <select id="produto" name="produto" required>
+                            <option value="">Escolha um produto</option>
+                            <option>Mandioca</option>
+                            <option>Banana-prata</option>
+                            <option>Açaí</option>
+                            <option>Pimenta-do-reino</option>
+                            <option>Cupuaçu</option>
+                            <option>Alface</option>
+                        </select></p>
+                        <p><label for="quantidade">Quantidade por semana</label> <input type="number" id="quantidade" name="quantidade" min="1" max="500" step="1" required></p>
+                        <p><label for="inicio">Começa a entregar em</label> <input type="date" id="inicio" name="inicio"></p>
+                        <fieldset>
+                            <legend>Como entrega</legend>
+                            <p><input type="radio" id="leva" name="entrega" value="leva"> <label for="leva">Leva à feira</label></p>
+                            <p><input type="radio" id="retira" name="entrega" value="retira"> <label for="retira">A feira retira na propriedade</label></p>
+                        </fieldset>
+                        <p><label for="obs">Observação</label> <textarea id="obs" name="obs" rows="3"></textarea></p>
+                        <p><input type="checkbox" id="aceite" name="aceite" required> <label for="aceite">Li e aceito as regras da feira</label></p>
+                    </fieldset>
+                    <button type="submit">Enviar cadastro</button>
+                </form>
+                <p role="status" aria-live="polite"></p>
+            </main>
+            <footer class="rodape-site">
+                <p>AgroFeira — da roça para a mesa, em Paragominas.</p>
+            </footer>
+        </body>
+        </html>
