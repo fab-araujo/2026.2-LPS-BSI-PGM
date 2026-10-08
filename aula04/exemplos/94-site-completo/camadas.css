@@ -1,0 +1,5 @@
+/* camadas.css — a ordem das camadas do projeto.
+   É o primeiro arquivo do head: ele fixa a ordem, e cada camada
+   seguinte vence as anteriores. */
+
+@layer reset, base, componentes, utilitarios;

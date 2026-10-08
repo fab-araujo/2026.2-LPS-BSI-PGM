@@ -1,0 +1,31 @@
+/* Novo: as mesmas regras, agora em duas camadas */
+
+@layer base, componentes;
+
+@layer base {
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: var(--tamanho-texto);
+  }
+
+  h1 {
+    font-size: var(--tamanho-h1);
+    line-height: 1.2;
+  }
+
+  main {
+    padding: var(--espaco-3) var(--espaco-2);
+  }
+
+  #colheita {
+    color: var(--cor-erro);
+  }
+}
+
+@layer componentes {
+  .aviso {
+    color: var(--cor-marca);
+  }
+}

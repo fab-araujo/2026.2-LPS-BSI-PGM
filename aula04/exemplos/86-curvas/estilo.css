@@ -1,0 +1,67 @@
+/* Estilo da aula 3 */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-texto);
+}
+
+h1 {
+  font-size: var(--tamanho-h2);
+  line-height: 1.2;
+}
+
+main {
+  padding: var(--espaco-3) var(--espaco-2);
+}
+
+main p {
+  margin-top: var(--espaco-1);
+}
+
+/* Novo: cinco barras, cada uma com a sua curva */
+.pista {
+  list-style: none;
+  padding: 0;
+  max-width: 13rem;
+  margin-top: var(--espaco-2);
+}
+
+.pista li {
+  border-bottom: 1px solid var(--cor-borda);
+  padding: var(--espaco-1) 0;
+}
+
+.barra {
+  width: 7rem;
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.25rem var(--espaco-1);
+  border-radius: var(--raio);
+}
+
+.pista:hover .barra {
+  transform: translateX(6rem);
+}
+
+.linear {
+  transition: transform 1s linear;
+}
+
+.ease {
+  transition: transform 1s ease;
+}
+
+.ease-in {
+  transition: transform 1s ease-in;
+}
+
+.ease-out {
+  transition: transform 1s ease-out;
+}
+
+.ease-in-out {
+  transition: transform 1s ease-in-out;
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — calendário de safra</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho-site">
+      <h1>AgroFeira</h1>
+    </header>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="safra.html" aria-current="page">Safra</a></li>
+        <li><a href="cadastro-produtor.html">Cadastro de produtor</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+    <main id="conteudo">
+      <h2>Calendário de safra</h2>
+      <p id="legenda-safra">Cheio: época de muita oferta. Meia: tem,
+        mas pouco. Vazio: fora de época.</p>
+      <div class="rolagem-tabela">
+        <table class="tabela-safra" aria-describedby="legenda-safra">
+          <caption>Safra dos produtos da feira, de janeiro a junho</caption>
+          <thead>
+            <tr>
+              <th scope="col">Produto</th>
+              <th scope="col">Jan</th><th scope="col">Fev</th>
+              <th scope="col">Mar</th><th scope="col">Abr</th>
+              <th scope="col">Mai</th><th scope="col">Jun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Mandioca</th>
+              <td>cheio</td><td>cheio</td><td>cheio</td>
+              <td>cheio</td><td>cheio</td><td>cheio</td>
+            </tr>
+            <tr>
+              <th scope="row">Banana-prata</th>
+              <td>cheio</td><td>cheio</td><td>meia</td>
+              <td>meia</td><td>cheio</td><td>cheio</td>
+            </tr>
+            <tr>
+              <th scope="row">Açaí</th>
+              <td>meia</td><td>vazio</td><td>vazio</td>
+              <td>vazio</td><td>meia</td><td>cheio</td>
+            </tr>
+            <tr>
+              <th scope="row">Pimenta-do-reino</th>
+              <td>vazio</td><td>vazio</td><td>vazio</td>
+              <td>meia</td><td>cheio</td><td>cheio</td>
+            </tr>
+            <tr>
+              <th scope="row">Cupuaçu</th>
+              <td>cheio</td><td>cheio</td><td>cheio</td>
+              <td>meia</td><td>vazio</td><td>vazio</td>
+            </tr>
+            <tr>
+              <th scope="row">Alface</th>
+              <td>meia</td><td>meia</td><td>cheio</td>
+              <td>cheio</td><td>cheio</td><td>cheio</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <aside>
+      <h2>Onde e quando</h2>
+      <p>Praça central de Paragominas, toda sexta, das 6h às 11h.</p>
+    </aside>
+    <footer class="rodape-site">
+      <p>AgroFeira — da roça para a mesa, em Paragominas.</p>
+    </footer>
+  </body>
+</html>

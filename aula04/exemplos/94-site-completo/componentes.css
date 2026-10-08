@@ -1,0 +1,200 @@
+/* componentes.css — as peças do site, uma classe por componente */
+
+@layer componentes {
+  .cabecalho-site {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    padding: var(--espaco-2);
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu a {
+    color: var(--cor-sobre-marca);
+  }
+
+  .lista-produtos {
+    list-style: none;
+    padding: 0;
+  }
+
+  .cartao-produto {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    padding: var(--espaco-2);
+  }
+
+  .cartao-produto img {
+    border-radius: var(--raio);
+  }
+
+  .cartao-produto .produtor {
+    color: var(--cor-texto-suave);
+  }
+
+  .cartao-produto .preco {
+    font-weight: 700;
+  }
+
+  .cartao-produto .estoque {
+    color: var(--cor-texto-suave);
+  }
+
+  .cartao-produto button {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    border: none;
+    border-radius: var(--raio);
+    padding: 0.5em 1em;
+  }
+
+  .tabela-safra th,
+  .tabela-safra td {
+    padding: var(--espaco-1);
+  }
+
+  .tabela-safra thead th {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+  }
+
+  .tabela-safra td {
+    background-color: var(--cor-superficie);
+  }
+
+  .rodape-site {
+    border-top: 1px solid var(--cor-borda);
+    color: var(--cor-texto-suave);
+    padding: var(--espaco-2);
+  }
+
+  .cartao-produto button:hover {
+    background-color: var(--cor-marca-forte);
+  }
+
+  .cartao-produto button:focus-visible {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 3px;
+  }
+
+  .cartao-produto:has(button:focus-visible) {
+    outline: 2px solid var(--cor-foco);
+  }
+
+  .cartao-produto article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--espaco-1);
+  }
+
+  .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: var(--espaco-2);
+  }
+
+  .destaque {
+    grid-column: 1 / -1;
+  }
+
+  .rolagem-tabela {
+    overflow-x: auto;
+  }
+
+  .rolagem-tabela:focus-visible {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 3px;
+  }
+
+  .cartao-produto {
+    container-type: inline-size;
+  }
+
+  @container (min-width: 26rem) {
+    .cartao-produto article {
+      display: grid;
+      grid-template-columns: 10rem 1fr;
+      gap: var(--espaco-2);
+    }
+
+    .cartao-produto img {
+      grid-row: span 3;
+    }
+
+    .cartao-produto button {
+      grid-column: 1;
+    }
+  }
+
+  .selo {
+    position: absolute;
+    top: var(--espaco-1);
+    left: var(--espaco-1);
+    background-color: var(--cor-superficie);
+    color: var(--cor-marca);
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.25rem var(--espaco-1);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+  }
+
+  .cartao-produto article {
+    position: relative;
+  }
+
+  @media (min-height: 30rem) {
+    .cabecalho-site {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    html {
+      scroll-padding-top: 10rem;
+    }
+  }
+
+  .pular {
+    position: absolute;
+    top: -10rem;
+    left: var(--espaco-1);
+    z-index: 2;
+    background-color: var(--cor-superficie);
+    color: var(--cor-marca);
+    padding: var(--espaco-1) var(--espaco-2);
+    border-radius: var(--raio);
+  }
+
+  .pular:focus-visible {
+    top: var(--espaco-1);
+    outline-color: var(--cor-sobre-marca);
+  }
+
+  .cartao-produto button {
+    transition: background-color 200ms ease-out;
+  }
+
+  .cartao-produto {
+    transition: transform 200ms ease-out, border-color 200ms ease-out;
+  }
+
+  .cartao-produto:hover,
+  .cartao-produto:has(button:focus-visible) {
+    border-color: var(--cor-marca);
+    transform: translateY(-0.5rem);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cartao-produto:hover,
+    .cartao-produto:has(button:focus-visible) {
+      transform: none;
+    }
+  }
+}

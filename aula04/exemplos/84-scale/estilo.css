@@ -1,0 +1,177 @@
+/* Estilo da aula 3 */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-texto);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--tamanho-h1); }
+h2 { font-size: var(--tamanho-h2); color: var(--cor-marca); }
+h3 { font-size: var(--tamanho-h3); color: var(--cor-marca); }
+
+main {
+  padding: var(--espaco-3) var(--espaco-2);
+}
+
+main h2 {
+  margin-bottom: var(--espaco-2);
+}
+
+.cabecalho-site {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+  padding: var(--espaco-2);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu a {
+  color: var(--cor-sobre-marca);
+}
+
+.lista-produtos {
+  list-style: none;
+  padding: 0;
+}
+
+.cartao-produto {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: var(--espaco-2);
+}
+
+.cartao-produto img {
+  border-radius: var(--raio);
+}
+
+.cartao-produto h3 {
+  margin-top: var(--espaco-1);
+}
+
+.produtor {
+  color: var(--cor-texto-suave);
+}
+
+.preco {
+  font-weight: 700;
+  margin-bottom: var(--espaco-1);
+}
+
+.cartao-produto button {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+  border: none;
+  border-radius: var(--raio);
+  padding: 0.5em 1em;
+}
+
+.rodape-site {
+  border-top: 1px solid var(--cor-borda);
+  color: var(--cor-texto-suave);
+  padding: var(--espaco-2);
+}
+
+/* Capítulo 1: estados */
+.cartao-produto button:hover {
+  background-color: var(--cor-marca-forte);
+}
+
+.cartao-produto button:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 3px;
+}
+
+/* Capítulo 2: o cartão cujo botão tem o foco */
+.cartao-produto:has(button:focus-visible) {
+  outline: 2px solid var(--cor-foco);
+}
+
+/* Capítulo 5: o cabeçalho e o menu em flex */
+.cabecalho-site {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espaco-2);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-2);
+}
+
+/* Capítulo 6: a grade do catálogo */
+.lista-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: var(--espaco-2);
+}
+
+/* Capítulo 10: o selo de safra sobre a foto */
+.selo {
+  position: absolute;
+  top: var(--espaco-1);
+  left: var(--espaco-1);
+  background-color: var(--cor-superficie);
+  color: var(--cor-marca);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.25rem var(--espaco-1);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.cartao-produto article {
+  position: relative;
+}
+
+/* Capítulo 10: o cabeçalho grudado, por cima do selo */
+.cabecalho-site {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Capítulo 10: o link de pular, fora da tela até receber o foco */
+.pular {
+  position: absolute;
+  top: -10rem;
+  left: var(--espaco-1);
+  z-index: 2;
+  background-color: var(--cor-superficie);
+  color: var(--cor-marca);
+  padding: var(--espaco-1) var(--espaco-2);
+  border-radius: var(--raio);
+}
+
+.pular:focus-visible {
+  top: var(--espaco-1);
+}
+
+/* Capítulo 10: a âncora não para atrás do cabeçalho */
+html {
+  scroll-padding-top: 7rem;
+}
+
+/* Capítulo 11: a cor do botão muda aos poucos */
+.cartao-produto button {
+  transition: background-color 200ms ease-out;
+}
+
+/* Novo: o cartão cresce com transform */
+.cartao-produto:hover {
+  transform: scale(1.05);
+}

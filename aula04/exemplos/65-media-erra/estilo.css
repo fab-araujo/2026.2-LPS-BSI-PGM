@@ -1,0 +1,125 @@
+/* A cara da aula 3 (só o que este exemplo usa) */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-texto);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--tamanho-h1); }
+h2 { font-size: var(--tamanho-h2); color: var(--cor-marca); }
+h3 { font-size: var(--tamanho-h3); color: var(--cor-marca); }
+
+main {
+  padding: var(--espaco-3) var(--espaco-2);
+}
+
+.cabecalho-site {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+  padding: var(--espaco-2);
+}
+
+.lista-produtos {
+  list-style: none;
+  padding: 0;
+}
+
+.cartao-produto img {
+  border-radius: var(--raio);
+}
+
+.produtor {
+  color: var(--cor-texto-suave);
+}
+
+.preco {
+  font-weight: 700;
+}
+
+.cartao-produto button {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+  border: none;
+  border-radius: var(--raio);
+  padding: 0.5em 1em;
+}
+
+/* O cartão da aula 3, sem o max-width: a largura vem do lugar */
+.cartao-produto {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: var(--espaco-2);
+}
+
+/* Do capítulo 5: o espaço entre as partes vem do gap */
+main,
+.lateral {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+}
+
+.cartao-produto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--espaco-1);
+}
+
+/* Dos capítulos 6 e 7: a página e a grade do catálogo */
+.lateral {
+  padding: var(--espaco-3) var(--espaco-2);
+}
+
+body {
+  display: grid;
+}
+
+.cabecalho-site {
+  grid-column: 1 / -1;
+}
+
+.lista-produtos {
+  display: grid;
+  gap: var(--espaco-2);
+}
+
+main .lista-produtos {
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+}
+
+.destaque {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 60rem) {
+  body {
+    grid-template-columns: 1fr 18rem;
+  }
+}
+
+/* Novo: o cartão deitado, decidido pela largura da JANELA */
+@media (min-width: 60rem) {
+  .cartao-produto {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: var(--espaco-2);
+  }
+
+  .cartao-produto img {
+    grid-row: span 3;
+  }
+
+  .cartao-produto button {
+    grid-column: 1;
+  }
+}

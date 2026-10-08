@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — imagem com sizes de 100vw</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho-site">
+      <h1>AgroFeira</h1>
+    </header>
+    <main id="conteudo">
+      <h2>Produtos da semana</h2>
+      <ul class="lista-produtos">
+        <li class="cartao-produto">
+          <img src="acai-640.jpg"
+            srcset="acai-320.jpg 320w, acai-480.jpg 480w, acai-640.jpg 640w"
+            sizes="100vw"
+            width="640" height="480"
+            alt="Tigela de açaí batido, com duas colheres de plástico">
+          <h3>Açaí médio</h3>
+          <p class="produtor">Sítio Boa Vista, Colônia do Uraim</p>
+          <p class="preco">R$ 12,00 o litro</p>
+          <button type="button">Adicionar</button>
+        </li>
+        <li class="cartao-produto">
+          <img src="farinha-640.jpg"
+            srcset="farinha-320.jpg 320w, farinha-480.jpg 480w, farinha-640.jpg 640w"
+            sizes="100vw"
+            width="640" height="480"
+            alt="Pote de farinha de mandioca sobre a mesa">
+          <h3>Farinha d'água</h3>
+          <p class="produtor">Casa de Farinha São José, Comunidade Nova Vida</p>
+          <p class="preco">R$ 90,00 a lata</p>
+          <button type="button">Adicionar</button>
+        </li>
+        <li class="cartao-produto">
+          <img src="banana-640.jpg"
+            srcset="banana-320.jpg 320w, banana-480.jpg 480w, banana-640.jpg 640w"
+            sizes="100vw"
+            width="640" height="480"
+            alt="Cachos de banana empilhados numa banca de feira">
+          <h3>Banana-prata</h3>
+          <p class="produtor">Sítio Três Irmãos, Colônia do Uraim</p>
+          <p class="preco">R$ 8,00 a dúzia</p>
+          <button type="button">Adicionar</button>
+        </li>
+      </ul>
+    </main>
+    <footer class="rodape-site">
+      <p>AgroFeira — da roça para a mesa, em Paragominas.</p>
+    </footer>
+  </body>
+</html>

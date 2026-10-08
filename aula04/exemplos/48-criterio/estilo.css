@@ -1,0 +1,62 @@
+/* Da aula 3: a cara da AgroFeira */
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-texto);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--tamanho-h1);
+}
+
+h2 {
+  font-size: var(--tamanho-h2);
+  color: var(--cor-marca);
+  margin-bottom: var(--espaco-2);
+}
+
+h3 {
+  font-size: var(--tamanho-h3);
+  color: var(--cor-marca);
+}
+
+main {
+  padding: var(--espaco-3) var(--espaco-2);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--espaco-4);
+}
+
+.menu li {
+  background-color: var(--cor-marca);
+  border-radius: var(--raio);
+  padding: var(--espaco-1) var(--espaco-2);
+}
+
+.menu a {
+  color: var(--cor-sobre-marca);
+}
+
+/* Do capítulo 5: o menu em Flexbox */
+.menu-flex {
+  display: flex;
+  gap: var(--espaco-1);
+}
+
+/* Novo: o mesmo menu numa grade de quatro colunas iguais, de 8rem */
+.menu-grade {
+  display: grid;
+  grid-template-columns: repeat(4, 8rem);
+  gap: var(--espaco-1);
+}

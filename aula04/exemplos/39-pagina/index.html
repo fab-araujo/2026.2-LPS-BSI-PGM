@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — a página com Flexbox</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <header class="cabecalho-site">
+      <h1>AgroFeira</h1>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="safra.html">Safra</a></li>
+          <li><a href="cadastro-produtor.html">Cadastro de produtor</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Produtos</h2>
+      <search>
+        <form class="busca">
+          <label for="q">Procurar produto</label>
+          <input type="search" id="q" name="q">
+          <button type="submit">
+            <img src="lupa.png" alt="Buscar" width="20" height="20">
+          </button>
+        </form>
+      </search>
+      <form class="barra-filtros" aria-label="Filtrar por categoria">
+        <button type="button">Todos</button>
+        <button type="button">Frutas</button>
+        <button type="button">Polpas</button>
+        <button type="button">Farinhas</button>
+        <button type="button">Temperos</button>
+        <button type="button">Hortaliças</button>
+        <button type="button">Amêndoas</button>
+      </form>
+      <ul class="lista-produtos">
+        <li class="cartao-produto">
+          <img src="acai.jpg"
+               alt="Tigela de açaí batido, com duas colheres de plástico"
+               width="640" height="480">
+          <h3>Açaí médio</h3>
+          <p class="produtor">Sítio Boa Vista, Colônia do Uraim</p>
+          <p class="preco">R$ 12,00 o litro</p>
+          <button type="button">Adicionar</button>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

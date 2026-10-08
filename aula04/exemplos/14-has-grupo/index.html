@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — :has() no formulário</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <main>
+      <h2>Cadastro de produtor</h2>
+      <form class="formulario-cadastro">
+        <fieldset>
+          <legend>Quem é você</legend>
+          <p>
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome"
+              autocomplete="name" required>
+          </p>
+          <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email"
+              autocomplete="email" required>
+          </p>
+          <p>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone"
+              autocomplete="tel">
+          </p>
+          <p>
+            <label for="cep">CEP da propriedade</label>
+            <input type="text" id="cep" name="cep" inputmode="numeric"
+              pattern="[0-9]{5}-?[0-9]{3}" aria-describedby="dica-cep">
+            <span id="dica-cep">Formato: 00000-000</span>
+          </p>
+        </fieldset>
+        <button type="submit">Enviar cadastro</button>
+      </form>
+    </main>
+  </body>
+</html>

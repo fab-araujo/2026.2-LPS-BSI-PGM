@@ -1,0 +1,30 @@
+@layer base, componentes;
+
+@layer base {
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: var(--tamanho-texto);
+  }
+
+  h1 {
+    font-size: var(--tamanho-h1);
+    line-height: 1.2;
+  }
+
+  main {
+    padding: var(--espaco-3) var(--espaco-2);
+  }
+}
+
+@layer componentes {
+  .aviso {
+    color: var(--cor-marca);
+  }
+}
+
+/* Novo: a regra do id, fora de qualquer camada */
+#colheita {
+  color: var(--cor-erro);
+}

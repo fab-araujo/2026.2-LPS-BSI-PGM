@@ -1,0 +1,47 @@
+/* base.css — o chão do projeto: a página, os elementos e o anel de foco */
+
+@layer base {
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: var(--tamanho-texto);
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: var(--tamanho-h1);
+  }
+
+  h2 {
+    font-size: var(--tamanho-h2);
+    color: var(--cor-marca);
+    margin-bottom: var(--espaco-2);
+  }
+
+  h3 {
+    font-size: var(--tamanho-h3);
+    color: var(--cor-marca);
+  }
+
+  main {
+    padding: var(--espaco-3) var(--espaco-2);
+  }
+
+  /* O anel de foco de todos os elementos (capítulo 1) */
+  :focus-visible {
+    outline: 2px solid var(--cor-foco);
+    outline-offset: 2px;
+  }
+
+  /* No verde do cabeçalho e do menu, só a cor do anel muda */
+  .cabecalho-site :focus-visible,
+  nav :focus-visible {
+    outline-color: var(--cor-sobre-marca);
+  }
+}

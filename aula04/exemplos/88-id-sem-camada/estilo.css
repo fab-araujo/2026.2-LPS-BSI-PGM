@@ -1,0 +1,27 @@
+/* O estilo da aula 3 */
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-texto);
+}
+
+h1 {
+  font-size: var(--tamanho-h1);
+  line-height: 1.2;
+}
+
+main {
+  padding: var(--espaco-3) var(--espaco-2);
+}
+
+/* A disputa da aula 3: o id vem antes e vence a classe */
+
+#colheita {
+  color: var(--cor-erro);
+}
+
+.aviso {
+  color: var(--cor-marca);
+}

@@ -1,0 +1,48 @@
+/* Estilo da aula 3 (só o que este exemplo usa) */
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-texto);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--tamanho-h1); }
+h2 { font-size: var(--tamanho-h2); color: var(--cor-marca); }
+h3 { font-size: var(--tamanho-h3); color: var(--cor-marca); }
+
+.cabecalho-site {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+  padding: var(--espaco-2);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu a {
+  color: var(--cor-sobre-marca);
+}
+
+/* Novo: Flexbox */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-2);
+}
+
+.cabecalho-site {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espaco-2);
+}

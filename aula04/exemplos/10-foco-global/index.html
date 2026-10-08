@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — foco para todos os elementos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <header class="cabecalho-site">
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#cadastro">Cadastro de produtor</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="cadastro">Cadastro de produtor</h2>
+      <form class="formulario-cadastro">
+        <p>
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" autocomplete="name">
+        </p>
+        <p>
+          <label for="comunidade">Comunidade</label>
+          <select id="comunidade" name="comunidade">
+            <option>Colônia do Uraim</option>
+            <option>Comunidade Nova Vida</option>
+          </select>
+        </p>
+        <p>
+          <label for="planta">O que você planta</label>
+          <textarea id="planta" name="planta"></textarea>
+        </p>
+        <button type="submit">Enviar cadastro</button>
+      </form>
+    </main>
+  </body>
+</html>

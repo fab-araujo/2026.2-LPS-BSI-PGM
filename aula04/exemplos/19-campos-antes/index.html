@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — cadastro de produtor</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <header class="cabecalho-site">
+      <p>AgroFeira</p>
+    </header>
+    <main>
+      <h1>Cadastro de produtor</h1>
+      <form class="formulario-cadastro">
+        <fieldset>
+          <legend>Seus dados</legend>
+          <p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome"
+              autocomplete="name">
+          </p>
+          <p>
+            <label for="comunidade">Comunidade</label>
+            <select id="comunidade" name="comunidade">
+              <option value="">Escolha</option>
+              <option value="uraim">Colônia do Uraim</option>
+              <option value="capim">Beira do rio Capim</option>
+            </select>
+          </p>
+          <p>
+            <label for="produtos">O que você planta</label>
+            <textarea id="produtos" name="produtos"
+              rows="3"></textarea>
+          </p>
+          <p>
+            <input type="checkbox" id="feira" name="feira">
+            <label for="feira">Vendo na feira de sábado</label>
+          </p>
+        </fieldset>
+        <button type="submit">Enviar cadastro</button>
+      </form>
+    </main>
+    <footer class="rodape-site">
+      <p>AgroFeira · Paragominas, PA</p>
+    </footer>
+  </body>
+</html>

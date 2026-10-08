@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — :disabled antes de :hover</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <main>
+      <h2>Produtos da semana</h2>
+      <ul class="lista-produtos">
+        <li class="cartao-produto">
+          <img src="acai.jpg"
+            alt="Tigela de açaí batido, com duas colheres de plástico"
+            width="640" height="480">
+          <h3>Açaí médio</h3>
+          <p class="produtor">Sítio Boa Vista, Colônia do Uraim</p>
+          <p class="preco">R$ 12,00 o litro</p>
+          <button type="button">Adicionar</button>
+        </li>
+        <li class="cartao-produto">
+          <img src="farinha.jpg"
+            alt="Pote de farinha de mandioca sobre a mesa"
+            width="640" height="480">
+          <h3>Farinha d'água</h3>
+          <p class="produtor">Casa de Farinha São José, Comunidade Nova Vida</p>
+          <p class="preco">R$ 90,00 a lata</p>
+          <button type="button" disabled>Esgotado</button>
+        </li>
+        <li class="cartao-produto">
+          <img src="banana.jpg"
+            alt="Cachos de banana empilhados numa banca de feira"
+            width="640" height="480">
+          <h3>Banana-prata</h3>
+          <p class="produtor">Sítio Três Irmãos, Colônia do Uraim</p>
+          <p class="preco">R$ 8,00 a dúzia</p>
+          <button type="button">Adicionar</button>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+/* componentes.css — as peças do site, uma classe por componente.
+   Nome do componente: tipo-assunto, como cartao-produto e cabecalho-site.
+   Parte de dentro: nome curto, escrito sempre depois do componente,
+   como em .cartao-produto .preco. */
+
+@layer componentes {
+  .cabecalho-site {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    padding: var(--espaco-2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--espaco-2);
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaco-2);
+  }
+
+  .menu a {
+    color: var(--cor-sobre-marca);
+  }
+
+  .lista-produtos {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: var(--espaco-2);
+  }
+
+  .cartao-produto {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    padding: var(--espaco-2);
+  }
+
+  .cartao-produto img {
+    border-radius: var(--raio);
+  }
+
+  .cartao-produto h3 {
+    margin-top: var(--espaco-1);
+  }
+
+  .cartao-produto .produtor {
+    color: var(--cor-texto-suave);
+  }
+
+  .cartao-produto .preco {
+    font-weight: 700;
+  }
+
+  .cartao-produto .estoque {
+    color: var(--cor-texto-suave);
+    margin-bottom: var(--espaco-1);
+  }
+
+  .cartao-produto button {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    border: none;
+    border-radius: var(--raio);
+    padding: 0.5em 1em;
+  }
+
+  .cartao-produto button:hover {
+    background-color: var(--cor-marca-forte);
+  }
+
+  .cartao-produto button:focus-visible {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 3px;
+  }
+
+  .rodape-site {
+    border-top: 1px solid var(--cor-borda);
+    color: var(--cor-texto-suave);
+    padding: var(--espaco-2);
+  }
+}
