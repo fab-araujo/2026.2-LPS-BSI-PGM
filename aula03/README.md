@@ -1,9 +1,10 @@
 # Aula 3 — CSS que você controla
 
-Duas pastas:
+Três pastas:
 
 - `exemplos/` — os exemplos mostrados em sala, na ordem em que apareceram nos slides;
-- `inicio/` — o `reset.css`, pronto, a folha que a Atividade 3 liga antes das suas.
+- `inicio/` — o `reset.css`, pronto, a folha que a Atividade 3 liga antes das suas;
+- [`solucao_atividade_aula03/`](solucao_atividade_aula03/) — ⚠️ **a solução da Atividade 3**, publicada depois do prazo de entrega.
 
 ## `exemplos/`
 
@@ -82,3 +83,7 @@ Estes exemplos são para **ler**, não para copiar: no seu `agrofeira-<seu-usuá
 | Arquivo | O que é |
 |---|---|
 | `reset.css` | A folha que zera as diferenças de fábrica entre navegadores, lida bloco a bloco nos slides. Ela vai para o seu repositório **como está**, sem mudança, e é ligada antes das suas folhas. O roteiro da Atividade 3, no SIGAA, diz como levá-la. |
+
+## ⚠️ Solução da Atividade 3
+
+A pasta [`solucao_atividade_aula03/`](solucao_atividade_aula03/) tem **a solução da Atividade 3**: as quatro páginas e as quatro folhas de estilo de um site possível, e o que se esperava em cada item do relatório. Ela foi publicada depois do prazo de entrega — se você ainda está fazendo a atividade, não abra.

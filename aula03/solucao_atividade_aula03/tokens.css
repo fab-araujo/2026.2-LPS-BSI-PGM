@@ -1,0 +1,35 @@
+/* tokens.css — as decisões visuais da AgroFeira.
+   Paleta do açaí: marca roxa e fundo lilás claro. O site é claro.
+   Contraste medido no painel de estilos (Chrome), no endereço público. */
+
+:root {
+  /* Cores */
+  --cor-fundo: #ece3f5;
+  --cor-superficie: #ffffff;
+  --cor-texto: #231a2d;        /* 13,42:1 sobre o fundo (AAA); 16,7:1 sobre a superfície (AAA) */
+  --cor-texto-suave: #4e3d5e;  /* 7,83:1 sobre o fundo (AAA) */
+  --cor-marca: #5b2a86;        /* 7,95:1 sobre o fundo (AAA) */
+  --cor-sobre-marca: #ffffff;  /* 9,9:1 sobre a marca (AAA) */
+  --cor-borda: #cdbfdd;
+
+  /* Letras: o texto na do sistema; os títulos na Lora, do Google Fonts */
+  --fonte-texto: system-ui, sans-serif;
+  --fonte-titulo: "Lora", serif;
+
+  /* Escala dos títulos: multiplicador 1,25; cada degrau é o anterior vezes 1,25
+     1 × 1,25 = 1,25 · 1,25 × 1,25 = 1,563 · 1,563 × 1,25 = 1,953 */
+  --tamanho-texto: 1rem;
+  --tamanho-h3: 1.25rem;
+  --tamanho-h2: 1.563rem;
+  --tamanho-h1: 1.953rem;
+
+  /* Ritmo vertical */
+  --espaco-1: 0.5rem;
+  --espaco-2: 1rem;
+  --espaco-3: 1.5rem;
+  --espaco-4: 2rem;
+
+  /* Cantos e sombra */
+  --raio: 12px;
+  --sombra: 0 2px 6px rgb(0 0 0 / 15%);
+}

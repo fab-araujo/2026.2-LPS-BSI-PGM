@@ -1,0 +1,43 @@
+/* Caso 1 */
+/* Previsão: a parte importante do aviso fica na cor da marca. Os dois seletores encontram o <strong>:
+   `.aviso strong` pesa 0-1-1 (uma classe e uma tag) e `strong` pesa 0-0-1 (uma tag). Vence a de maior
+   especificidade, mesmo vindo antes na folha. O estilo.css não dá cor nem ao <strong> nem ao .aviso. */
+/* Conferido: no painel, `.aviso strong` (casos.css) está em cima, com a cor da marca; `strong { color: ... }`
+   aparece riscada. Especificidade mostrada ao parar o ponteiro: (0,1,1) contra (0,0,1). */
+.aviso strong {
+  color: var(--cor-marca);
+}
+
+strong {
+  color: var(--cor-texto-suave);
+}
+
+/* Caso 2 */
+/* Previsão: o rótulo "Procurar produto" fica na cor do texto suave. `.busca label` pesa 0-1-1 (classe e tag)
+   e `label[for]` também pesa 0-1-1 (o atributo conta na coluna da classe, e a tag na coluna de baixo).
+   Empate: vence a que vem por último na folha, `label[for]`. O rótulo da busca tem o atributo `for`,
+   ligado ao campo pelo `id`. */
+/* Conferido: o painel mostra `label[for]` em cima, com o texto suave, e `.busca label` riscada. As duas
+   mostram (0,1,1) na especificidade; quem decidiu foi a ordem. */
+.busca label {
+  color: var(--cor-marca);
+}
+
+label[for] {
+  color: var(--cor-texto-suave);
+}
+
+/* Caso 3 */
+/* Previsão: o parágrafo do rodapé fica na cor do texto. `.rodape-site` dá cor ao <footer>, e o <p> só a
+   herdaria; mas `footer p` declara a cor direto no <p>, e uma declaração direta vence a herdada,
+   qualquer que seja a especificidade. (No <footer>, o `.rodape-site` do casos.css vence o do estilo.css
+   pela ordem: os dois pesam 0-1-0.) */
+/* Conferido: no <p>, o painel mostra `footer p` em cima, com a cor do texto. Em "Herdado de footer.rodape-site",
+   aparece o `color` do casos.css (marca) e, riscado, o do estilo.css (texto suave); nenhum dos dois chega ao <p>. */
+.rodape-site {
+  color: var(--cor-marca);
+}
+
+footer p {
+  color: var(--cor-texto);
+}

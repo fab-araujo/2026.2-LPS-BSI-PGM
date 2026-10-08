@@ -1,0 +1,182 @@
+/* A página inteira */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-texto);
+}
+
+main,
+aside {
+  padding: var(--espaco-3) var(--espaco-2);
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--tamanho-h1);
+}
+
+h2 {
+  font-size: var(--tamanho-h2);
+  margin-top: var(--espaco-4);
+  margin-bottom: var(--espaco-1);
+}
+
+h3 {
+  font-size: var(--tamanho-h3);
+  margin-top: var(--espaco-3);
+  margin-bottom: var(--espaco-1);
+}
+
+h2,
+h3 {
+  color: var(--cor-marca);
+}
+
+p {
+  max-width: 34rem;
+  margin-bottom: var(--espaco-2);
+}
+
+/* Cabeçalho e menu */
+.cabecalho-site {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+  padding: var(--espaco-2);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu a {
+  color: var(--cor-sobre-marca);
+}
+
+.menu a[aria-current="page"] {
+  font-weight: 700;
+}
+
+/* Home */
+.figura-destaque figcaption {
+  color: var(--cor-texto-suave);
+  margin-top: var(--espaco-1);
+}
+
+.busca input[type="search"] {
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 0.5em;
+}
+
+.busca button,
+.formulario-cadastro button {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+  border: none;
+  border-radius: var(--raio);
+  padding: 0.5em 1em;
+}
+
+.lista-produtos {
+  list-style: none;
+  padding: 0;
+}
+
+.cartao-produto {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: var(--espaco-2);
+  margin-bottom: var(--espaco-2);
+  max-width: 20rem;
+}
+
+.aviso {
+  background-color: var(--cor-superficie);
+  border: 2px solid var(--cor-marca);
+  border-radius: var(--raio);
+  padding: var(--espaco-2);
+  margin-top: var(--espaco-3);
+  max-width: 34rem;
+}
+
+/* Safra */
+.tabela-safra th,
+.tabela-safra td {
+  padding: var(--espaco-1) var(--espaco-2);
+}
+
+.tabela-safra thead th {
+  background-color: var(--cor-marca);
+  color: var(--cor-sobre-marca);
+}
+
+.tabela-safra td {
+  background-color: var(--cor-superficie);
+}
+
+/* Cadastro */
+.formulario-cadastro > fieldset {
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: var(--espaco-2);
+  margin-bottom: var(--espaco-3);
+}
+
+fieldset fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-weight: 700;
+  color: var(--cor-marca);
+}
+
+.formulario-cadastro input[type="text"],
+.formulario-cadastro input[type="email"],
+.formulario-cadastro input[type="tel"],
+.formulario-cadastro input[type="number"],
+.formulario-cadastro input[type="date"],
+.formulario-cadastro select,
+.formulario-cadastro textarea {
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 0.5em;
+  background-color: var(--cor-superficie);
+}
+
+/* Sobre */
+blockquote {
+  color: var(--cor-texto-suave);
+  padding-left: var(--espaco-3);
+}
+
+dt {
+  font-weight: 700;
+}
+
+.pergunta {
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: var(--espaco-2);
+  margin-bottom: var(--espaco-1);
+  max-width: 34rem;
+}
+
+/* Rodapé */
+.rodape-site {
+  border-top: 1px solid var(--cor-borda);
+  color: var(--cor-texto-suave);
+  padding: var(--espaco-2);
+}
