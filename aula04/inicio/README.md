@@ -5,7 +5,7 @@ Os arquivos que a Atividade 4 manda levar para o seu repositório. O roteiro, no
 | Arquivo | O que é |
 |---|---|
 | `catalogo.html` | A página do catálogo, só com a marcação: sem nenhuma linha de CSS. O estilo é a atividade. |
-| `acai.jpg`, `farinha.jpg`, `banana.jpg`, `pimenta.jpg`, `cacau.jpg`, `cupuacu.jpg`, `jambu.jpg` | As sete fotos dos produtos, todas com 640 × 480 pixels. |
+| `acai.jpg`, `farinha.jpg`, `banana.jpg`, `pimenta.jpg`, `cacau.jpg`, `cupuacu-640.jpg`, `jambu.jpg` | As sete fotos dos produtos, todas com 640 × 480 pixels. O cupuaçu leva `-640` no nome porque o `cupuacu.jpg` da Atividade 2, menor, já está no repositório do aluno, e o nome igual o trocaria. |
 
 ## Origem das fotos
 
