@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — mostrar e esconder por largura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+    <script defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="d-flex justify-content-between align-items-center py-3 mb-4">
+        <h1 class="h3 mb-0">AgroFeira</h1>
+        <a href="sobre.html">Sobre a feira</a>
+      </header>
+      <div class="row g-4">
+        <main class="col-lg-9">
+          <h2>Produtos da semana</h2>
+          <div class="row g-4">
+            <div class="col-12 col-sm-6">
+              <article>
+                <img src="acai.jpg" class="img-fluid" width="640" height="480"
+                  alt="Tigela de açaí batido, com duas colheres de plástico">
+                <h3 class="h5 mt-2">Açaí médio</h3>
+                <p class="text-body-secondary mb-1">Sítio Boa Vista, Colônia do Uraim</p>
+                <p class="fw-bold">R$ 12,00 o litro</p>
+                <button type="button">Adicionar</button>
+              </article>
+            </div>
+            <div class="col-12 col-sm-6">
+              <article>
+                <img src="farinha.jpg" class="img-fluid" width="640" height="480"
+                  alt="Pote de farinha de mandioca sobre a mesa">
+                <h3 class="h5 mt-2">Farinha d'água</h3>
+                <p class="text-body-secondary mb-1">Casa de Farinha São José, Comunidade Nova Vida</p>
+                <p class="fw-bold">R$ 90,00 a lata</p>
+                <button type="button">Adicionar</button>
+              </article>
+            </div>
+          </div>
+        </main>
+        <aside class="col-lg-3 d-none d-lg-block">
+          <h2 class="h5">Mais pedidos</h2>
+          <ol>
+            <li>Açaí médio</li>
+            <li>Farinha d'água</li>
+            <li>Polpa de cupuaçu</li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

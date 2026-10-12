@@ -1,0 +1,5 @@
+/* agrofeira-bootstrap.css — a customização */
+
+:root {
+  --bs-primary: var(--cor-marca);
+}

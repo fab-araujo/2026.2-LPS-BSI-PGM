@@ -33,3 +33,4 @@ O estado final de cada aula — isto é, a solução da atividade — só é pub
 | 2 | HTML5 que significa alguma coisa | [`aula02/`](aula02/) |
 | 3 | CSS que você controla | [`aula03/`](aula03/) |
 | 4 | O cartão que se adapta ao espaço, não à janela | [`aula04/`](aula04/) |
+| 5 | Bootstrap: componentes prontos e o preço deles | [`aula05/`](aula05/) |

@@ -1,0 +1,10 @@
+/* agrofeira-bootstrap.css — a customização */
+
+.btn-primary {
+  --bs-btn-bg: var(--cor-marca);
+  --bs-btn-border-color: var(--cor-marca);
+  --bs-btn-hover-bg: var(--cor-marca-forte);
+  --bs-btn-hover-border-color: var(--cor-marca-forte);
+  --bs-btn-active-bg: var(--cor-marca-forte);
+  --bs-btn-active-border-color: var(--cor-marca-forte);
+}

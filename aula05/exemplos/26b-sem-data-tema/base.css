@@ -1,0 +1,87 @@
+/* base.css — o chão do projeto: a página, os elementos e o anel de foco */
+
+@layer base {
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: var(--tamanho-texto);
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: var(--tamanho-h1);
+  }
+
+  h2 {
+    font-size: var(--tamanho-h2);
+    color: var(--cor-marca);
+  }
+
+  h3 {
+    font-size: var(--tamanho-h3);
+    color: var(--cor-marca);
+  }
+
+  main {
+    padding: var(--espaco-3) var(--espaco-2);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--cor-foco);
+    outline-offset: 2px;
+  }
+
+  .cabecalho-site :focus-visible,
+  nav :focus-visible {
+    outline-color: var(--cor-sobre-marca);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-3);
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "cabecalho"
+      "menu"
+      "conteudo"
+      "lateral"
+      "rodape";
+    gap: var(--espaco-2);
+  }
+
+  .cabecalho-site { grid-area: cabecalho; }
+  nav             { grid-area: menu; }
+  main            { grid-area: conteudo; }
+  aside           { grid-area: lateral; }
+  .rodape-site    { grid-area: rodape; }
+
+  nav {
+    background-color: var(--cor-marca);
+    padding: var(--espaco-2);
+  }
+
+  aside {
+    padding: var(--espaco-3) var(--espaco-2);
+  }
+
+  @media (min-width: 42rem) {
+    body {
+      grid-template-columns: 10rem minmax(0, 1fr) 14rem;
+      grid-template-areas:
+        "cabecalho cabecalho cabecalho"
+        "menu      conteudo  lateral"
+        "rodape    rodape    rodape";
+    }
+  }
+}
