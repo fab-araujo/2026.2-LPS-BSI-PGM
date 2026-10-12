@@ -7,7 +7,6 @@
   --bs-body-font-family: var(--fonte-texto);
   --bs-border-radius: var(--raio);
   --bs-link-color: var(--cor-marca);
-  --bs-link-color-rgb: 46, 107, 48;
   --bs-link-hover-color: var(--cor-marca-forte);
 }
 
@@ -15,8 +14,10 @@
   --bs-btn-bg: var(--cor-marca);
   --bs-btn-border-color: var(--cor-marca);
   --bs-btn-color: var(--cor-sobre-marca);
+  --bs-btn-hover-color: var(--cor-sobre-marca);
   --bs-btn-hover-bg: var(--cor-marca-forte);
   --bs-btn-hover-border-color: var(--cor-marca-forte);
+  --bs-btn-active-color: var(--cor-sobre-marca);
   --bs-btn-active-bg: var(--cor-marca-forte);
   --bs-btn-active-border-color: var(--cor-marca-forte);
 }

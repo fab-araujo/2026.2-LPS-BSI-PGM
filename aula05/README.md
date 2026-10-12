@@ -10,7 +10,7 @@ Cada exemplo é uma **pasta** com um documento completo: o `index.html`, as foto
 
 Cada pasta também abre no navegador, já com o estilo, no endereço do GitHub Pages deste repositório: `https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/exemplos/` seguido do nome da pasta. A lista com um link para cada exemplo está em <https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/exemplos/>. Para ver a grade mudar, estreite e alargue a janela.
 
-Nos exemplos 06 a 16, a folha `moldura.css` desenha as peças da grade: vermelho no contêiner, verde na linha e uma caixa azul no conteúdo de cada coluna, com o nome da classe. Ela serve para enxergar a grade e não vai para o site. O exemplo 36 é o site completo da aula 4 com o tema por atributo; o 39 é do horizonte, mostrado sem cobrança. As fotos vêm do Wikimedia Commons, com os créditos no rodapé do catálogo.
+Nos exemplos 06 a 16, a folha `moldura.css` desenha as peças da grade: vermelho no contêiner, verde na linha e uma caixa azul no conteúdo de cada coluna, com o nome da classe. Ela serve para enxergar a grade e não vai para o site. O exemplo 36 é o site completo da aula 4 com o tema por atributo. As fotos vêm do Wikimedia Commons, com os créditos no rodapé do catálogo.
 
 Estes exemplos são para **ler**, não para copiar: no seu `agrofeira-<seu-usuário>` vai só o que você escrever.
 
@@ -23,13 +23,13 @@ Estes exemplos são para **ler**, não para copiar: no seu `agrofeira-<seu-usuá
 | [`05-trecho-completo`](exemplos/05-trecho-completo/) | O `<link>` como a documentação oferece, com `integrity` e `crossorigin`. |
 | [`06-tres-pecas`](exemplos/06-tres-pecas/) | `container`, `row` e `col`, uma dentro da outra: duas colunas na primeira linha, uma na segunda. |
 | [`07-partes-iguais`](exemplos/07-partes-iguais/) | `col` sem número: uma, duas, três, quatro e seis colunas dividem a linha em partes iguais. |
-| [`08-doze-partes`](exemplos/08-doze-partes/) | As 12 partes da linha: doze `col`, `col-12`, `col-6` + `col-6`, `col-4` + `col-8`, quatro `col-3`. |
-| [`09-soma`](exemplos/09-soma/) | Quando a soma não dá 12: `col-4` sozinha, `col-9` + `col-3`, `col-9` + `col-4` (a segunda desce) e `col-3` + `col`. |
-| [`10-col-md-6`](exemplos/10-col-md-6/) | `col-md-6`: uma embaixo da outra até 767 px, metade a partir de 768 px. |
-| [`11-tres-faixas`](exemplos/11-tres-faixas/) | `col-12 col-md-6 col-xl-3`: uma, duas e quatro por linha. |
-| [`12-container`](exemplos/12-container/) | `container`: a largura máxima cresce em degraus e a grade fica no centro. |
-| [`13-container-fluid`](exemplos/13-container-fluid/) | `container-fluid`: a largura toda, em qualquer janela. |
-| [`14-calhas`](exemplos/14-calhas/) | A calha entre as colunas: `row gx-0`, `row gx-2` e `row`, a de fábrica. |
+| [`08-calhas`](exemplos/08-calhas/) | A calha entre as colunas: `row gx-0`, `row gx-2` e `row`, a de fábrica. |
+| [`09-doze-partes`](exemplos/09-doze-partes/) | As 12 partes da linha: doze `col-1`, `col-12`, `col-6` + `col-6`, `col-4` + `col-8`, quatro `col-3`. |
+| [`10-soma`](exemplos/10-soma/) | Quando a soma não dá 12: `col-4` sozinha, `col-9` + `col-3`, `col-9` + `col-4` (a segunda desce) e `col-3` + `col`. |
+| [`11-col-md-6`](exemplos/11-col-md-6/) | `col-md-6`: uma embaixo da outra até 767 px, metade a partir de 768 px. |
+| [`12-tres-faixas`](exemplos/12-tres-faixas/) | `col-12 col-md-6 col-xl-3`: uma, duas e quatro por linha. |
+| [`13-container`](exemplos/13-container/) | `container`: a largura máxima cresce em degraus e a grade fica no centro. |
+| [`14-container-fluid`](exemplos/14-container-fluid/) | `container-fluid`: a largura toda, em qualquer janela. |
 | [`15-grade-dentro`](exemplos/15-grade-dentro/) | Uma `row` dentro de uma `col-8`: a grade de dentro conta 12 partes na largura da coluna. |
 | [`16-pagina-na-grade`](exemplos/16-pagina-na-grade/) | Uma página inteira na grade: cabeçalho, chamada, destaques, conteúdo com lateral e rodapé. |
 | [`17-colunas`](exemplos/17-colunas/) | Os cartões do catálogo na grade: `col-12 col-sm-6 col-lg-4`. |
@@ -37,8 +37,8 @@ Estes exemplos são para **ler**, não para copiar: no seu `agrofeira-<seu-usuá
 | [`19-row-cols`](exemplos/19-row-cols/) | `row-cols-1 row-cols-sm-2 row-cols-lg-3`: quantas colunas por linha, em cada faixa. |
 | [`20-espaco-antes`](exemplos/20-espaco-antes/) | O cabeçalho antes dos utilitários de espaço. |
 | [`21-espaco`](exemplos/21-espaco/) | `py-3 mb-4` no cabeçalho e `mb-0` no título: utilitários de espaço. |
-| [`22-flex`](exemplos/22-flex/) | `d-flex justify-content-between align-items-center`: o cabeçalho em fila, com os itens nas pontas. |
-| [`23-texto`](exemplos/23-texto/) | `text-body-secondary`, `fw-bold` e a classe `h5` num `h3`: utilitários de texto. |
+| [`23-flex`](exemplos/23-flex/) | `d-flex justify-content-between align-items-center`: o cabeçalho em fila, com os itens nas pontas. |
+| [`22-texto`](exemplos/22-texto/) | `text-body-secondary`, `fw-bold` e a classe `h5` num `h3`: utilitários de texto. |
 | [`24-d-none`](exemplos/24-d-none/) | `d-none d-lg-block`: a lista "Mais pedidos" só aparece a partir de 992 px. |
 | [`25-botao`](exemplos/25-botao/) | O botão de fábrica, `btn btn-primary` e `btn btn-outline-secondary`. |
 | [`26-cartao`](exemplos/26-cartao/) | Um cartão: `card`, `card-img-top`, `card-body`, `card-title` e `card-text`. |
@@ -55,4 +55,3 @@ Estes exemplos são para **ler**, não para copiar: no seu `agrofeira-<seu-usuá
 | [`36-data-tema`](exemplos/36-data-tema/) | O site da aula 4 com `data-tema="escuro"` no `<html>` e a regra `[data-tema="escuro"]` nos tokens. |
 | [`37-escuro-customizado`](exemplos/37-escuro-customizado/) | `data-bs-theme="dark"` no `<html>` e os tokens com valores escuros em `[data-bs-theme="dark"]`. |
 | [`38-utilitario-vence`](exemplos/38-utilitario-vence/) | `.card-body{padding:2rem}` contra `p-2`: o `!important` do utilitário vence. |
-| [`39-bootstrap-6-alfa`](exemplos/39-bootstrap-6-alfa/) | Horizonte: o Bootstrap 6 alfa, com `md:col-6 lg:col-4`. |

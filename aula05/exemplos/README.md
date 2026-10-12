@@ -13,13 +13,13 @@ O que é cada pasta está no [README da aula](../).
 | [05-trecho-completo](05-trecho-completo/) | O `<link>` como a documentação oferece, com `integrity` e `crossorigin`. |
 | [06-tres-pecas](06-tres-pecas/) | `container`, `row` e `col`, uma dentro da outra: duas colunas na primeira linha, uma na segunda. |
 | [07-partes-iguais](07-partes-iguais/) | `col` sem número: uma, duas, três, quatro e seis colunas dividem a linha em partes iguais. |
-| [08-doze-partes](08-doze-partes/) | As 12 partes da linha: doze `col`, `col-12`, `col-6` + `col-6`, `col-4` + `col-8`, quatro `col-3`. |
-| [09-soma](09-soma/) | Quando a soma não dá 12: `col-4` sozinha, `col-9` + `col-3`, `col-9` + `col-4` (a segunda desce) e `col-3` + `col`. |
-| [10-col-md-6](10-col-md-6/) | `col-md-6`: uma embaixo da outra até 767 px, metade a partir de 768 px. |
-| [11-tres-faixas](11-tres-faixas/) | `col-12 col-md-6 col-xl-3`: uma, duas e quatro por linha. |
-| [12-container](12-container/) | `container`: a largura máxima cresce em degraus e a grade fica no centro. |
-| [13-container-fluid](13-container-fluid/) | `container-fluid`: a largura toda, em qualquer janela. |
-| [14-calhas](14-calhas/) | A calha entre as colunas: `row gx-0`, `row gx-2` e `row`, a de fábrica. |
+| [08-calhas](08-calhas/) | A calha entre as colunas: `row gx-0`, `row gx-2` e `row`, a de fábrica. |
+| [09-doze-partes](09-doze-partes/) | As 12 partes da linha: doze `col-1`, `col-12`, `col-6` + `col-6`, `col-4` + `col-8`, quatro `col-3`. |
+| [10-soma](10-soma/) | Quando a soma não dá 12: `col-4` sozinha, `col-9` + `col-3`, `col-9` + `col-4` (a segunda desce) e `col-3` + `col`. |
+| [11-col-md-6](11-col-md-6/) | `col-md-6`: uma embaixo da outra até 767 px, metade a partir de 768 px. |
+| [12-tres-faixas](12-tres-faixas/) | `col-12 col-md-6 col-xl-3`: uma, duas e quatro por linha. |
+| [13-container](13-container/) | `container`: a largura máxima cresce em degraus e a grade fica no centro. |
+| [14-container-fluid](14-container-fluid/) | `container-fluid`: a largura toda, em qualquer janela. |
 | [15-grade-dentro](15-grade-dentro/) | Uma `row` dentro de uma `col-8`: a grade de dentro conta 12 partes na largura da coluna. |
 | [16-pagina-na-grade](16-pagina-na-grade/) | Uma página inteira na grade: cabeçalho, chamada, destaques, conteúdo com lateral e rodapé. |
 | [17-colunas](17-colunas/) | Os cartões do catálogo na grade: `col-12 col-sm-6 col-lg-4`. |
@@ -27,8 +27,8 @@ O que é cada pasta está no [README da aula](../).
 | [19-row-cols](19-row-cols/) | `row-cols-1 row-cols-sm-2 row-cols-lg-3`: quantas colunas por linha, em cada faixa. |
 | [20-espaco-antes](20-espaco-antes/) | O cabeçalho antes dos utilitários de espaço. |
 | [21-espaco](21-espaco/) | `py-3 mb-4` no cabeçalho e `mb-0` no título: utilitários de espaço. |
-| [22-flex](22-flex/) | `d-flex justify-content-between align-items-center`: o cabeçalho em fila, com os itens nas pontas. |
-| [23-texto](23-texto/) | `text-body-secondary`, `fw-bold` e a classe `h5` num `h3`: utilitários de texto. |
+| [23-flex](23-flex/) | `d-flex justify-content-between align-items-center`: o cabeçalho em fila, com os itens nas pontas. |
+| [22-texto](22-texto/) | `text-body-secondary`, `fw-bold` e a classe `h5` num `h3`: utilitários de texto. |
 | [24-d-none](24-d-none/) | `d-none d-lg-block`: a lista "Mais pedidos" só aparece a partir de 992 px. |
 | [25-botao](25-botao/) | O botão de fábrica, `btn btn-primary` e `btn btn-outline-secondary`. |
 | [26-cartao](26-cartao/) | Um cartão: `card`, `card-img-top`, `card-body`, `card-title` e `card-text`. |
@@ -45,4 +45,3 @@ O que é cada pasta está no [README da aula](../).
 | [36-data-tema](36-data-tema/) | O site da aula 4 com `data-tema="escuro"` no `<html>` e a regra `[data-tema="escuro"]` nos tokens. |
 | [37-escuro-customizado](37-escuro-customizado/) | `data-bs-theme="dark"` no `<html>` e os tokens com valores escuros em `[data-bs-theme="dark"]`. |
 | [38-utilitario-vence](38-utilitario-vence/) | `.card-body{padding:2rem}` contra `p-2`: o `!important` do utilitário vence. |
-| [39-bootstrap-6-alfa](39-bootstrap-6-alfa/) | Horizonte: o Bootstrap 6 alfa, com `md:col-6 lg:col-4`. |
