@@ -6,11 +6,11 @@ Uma pasta:
 
 ## `exemplos/`
 
-Cada exemplo é uma **pasta** com um documento completo: o `index.html`, as fotos que ele usa e, quando há, as folhas próprias (`tokens.css`, `agrofeira-bootstrap.css`). O Bootstrap 5.3.8 vem da rede de distribuição jsDelivr, pelo `<link>` e pelo `<script>` do `head`. Entre na pasta e clique no arquivo: o GitHub mostra o código na própria página.
+Cada exemplo é uma **pasta** com um documento completo: o `index.html`, as fotos que ele usa e, quando há, as folhas próprias (`moldura.css`, `tokens.css`, `agrofeira-bootstrap.css`). O Bootstrap 5.3.8 vem da rede de distribuição jsDelivr, pelo `<link>` do `head`. Entre na pasta e clique no arquivo: o GitHub mostra o código na própria página.
 
-Cada pasta também abre no navegador, já com o estilo, no endereço do GitHub Pages deste repositório: `https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/exemplos/` seguido do nome da pasta. A lista com um link para cada exemplo está em <https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/exemplos/>. Para ver a grade mudar, estreite e alargue a janela; o menu e o diálogo precisam do JavaScript ligado.
+Cada pasta também abre no navegador, já com o estilo, no endereço do GitHub Pages deste repositório: `https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/exemplos/` seguido do nome da pasta. A lista com um link para cada exemplo está em <https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/exemplos/>. Para ver a grade mudar, estreite e alargue a janela.
 
-O exemplo 26 é o site completo da aula 4 com o tema por atributo; os 33 e 34 são do horizonte, mostrados sem cobrança. As fotos vêm do Wikimedia Commons, com os créditos no rodapé do catálogo.
+Nos exemplos 06 a 16, a folha `moldura.css` desenha as peças da grade: vermelho no contêiner, verde na linha e uma caixa azul no conteúdo de cada coluna, com o nome da classe. Ela serve para enxergar a grade e não vai para o site. O exemplo 36 é o site completo da aula 4 com o tema por atributo; o 39 é do horizonte, mostrado sem cobrança. As fotos vêm do Wikimedia Commons, com os créditos no rodapé do catálogo.
 
 Estes exemplos são para **ler**, não para copiar: no seu `agrofeira-<seu-usuário>` vai só o que você escrever.
 
@@ -20,35 +20,39 @@ Estes exemplos são para **ler**, não para copiar: no seu `agrofeira-<seu-usuá
 | [`02-so-o-link`](exemplos/02-so-o-link/) | Só o `<link>` do `bootstrap.min.css`: o Reboot muda letra, margens e botão; a foto de 640 px passa da tela estreita. |
 | [`03-img-fluid`](exemplos/03-img-fluid/) | A primeira classe, `img-fluid`: a foto nunca passa da largura disponível. |
 | [`04-integrity-errada`](exemplos/04-integrity-errada/) | Uma letra trocada no `integrity`: o navegador recusa a folha, e o Console (F12) diz por quê. |
-| [`05-com-script`](exemplos/05-com-script/) | O trecho da documentação inteiro: `<link>` com `integrity` e `crossorigin` e o `<script defer>` do `bootstrap.bundle.min.js`. |
-| [`06-container`](exemplos/06-container/) | `container`: a largura máxima cresce em degraus e o conteúdo fica no centro. |
-| [`07-container-fluid`](exemplos/07-container-fluid/) | `container-fluid`: a largura toda, em qualquer janela. |
-| [`08-colunas`](exemplos/08-colunas/) | `row` e `col-12 col-sm-6 col-lg-4`: uma, duas e três colunas conforme a faixa. |
-| [`09-calhas`](exemplos/09-calhas/) | `row g-4`: calha também entre as colunas que caem uma embaixo da outra. |
-| [`10-row-cols`](exemplos/10-row-cols/) | `row-cols-1 row-cols-sm-2 row-cols-lg-3`: quantas colunas por linha, em cada faixa. |
-| [`11-espaco-antes`](exemplos/11-espaco-antes/) | O cabeçalho antes dos utilitários de espaço. |
-| [`12-espaco`](exemplos/12-espaco/) | `py-3 mb-4` no cabeçalho e `mb-0` no título: utilitários de espaço. |
-| [`13-flex`](exemplos/13-flex/) | `d-flex justify-content-between align-items-center`: o cabeçalho em fila, com os itens nas pontas. |
-| [`14-texto`](exemplos/14-texto/) | `text-body-secondary`, `fw-bold` e a classe `h5` num `h3`: utilitários de texto. |
-| [`15-d-none`](exemplos/15-d-none/) | `d-none d-lg-block`: a lista "Mais pedidos" só aparece a partir de 992 px. |
-| [`16-botao`](exemplos/16-botao/) | O botão de fábrica, `btn btn-primary` e `btn btn-outline-secondary`. |
-| [`17-cartao`](exemplos/17-cartao/) | Um cartão: `card`, `card-img-top`, `card-body`, `card-title` e `card-text`. |
-| [`18-grade-de-cartoes`](exemplos/18-grade-de-cartoes/) | Os sete cartões numa lista que é a grade (`row-cols-*`), com `h-100` e `list-unstyled`. |
-| [`18b-sem-h-100`](exemplos/18b-sem-h-100/) | A mesma grade sem `h-100`: na mesma linha, cartões de alturas diferentes. |
-| [`19-filtros`](exemplos/19-filtros/) | O formulário dos filtros: `form-label`, `form-control` e `form-select` na grade. |
-| [`20-navbar`](exemplos/20-navbar/) | A barra de navegação: `navbar-expand-md`, o botão `navbar-toggler` e o bloco `collapse` (precisa do script). |
-| [`21-modal`](exemplos/21-modal/) | O diálogo de detalhe do primeiro produto: `modal`, aberto por `data-bs-toggle="modal"` (precisa do script). |
-| [`22-catalogo-bootstrap`](exemplos/22-catalogo-bootstrap/) | O catálogo inteiro em Bootstrap, sem customização: a versão que se mede ao lado da da aula 4. |
-| [`23-armadilha`](exemplos/23-armadilha/) | `--bs-primary` redefinido no `:root`: nenhum botão muda. |
-| [`24-variavel-do-componente`](exemplos/24-variavel-do-componente/) | `.btn-primary` com as variáveis do componente (`--bs-btn-bg`…) apontando para os tokens: o botão muda. |
-| [`25-tokens-alimentam`](exemplos/25-tokens-alimentam/) | O catálogo com `tokens.css` e `agrofeira-bootstrap.css`: fundo, texto, letra, cantos, links e botão do projeto. |
-| [`26-data-tema`](exemplos/26-data-tema/) | O site da aula 4 com `data-tema="escuro"` no `<html>` e a regra `[data-tema="escuro"]` nos tokens. |
-| [`26b-sem-data-tema`](exemplos/26b-sem-data-tema/) | O mesmo site sem o atributo: segue o tema do sistema. |
-| [`27-data-bs-theme`](exemplos/27-data-bs-theme/) | `data-bs-theme="dark"` no `<html>`: o modo escuro do Bootstrap. |
-| [`28-escuro-customizado-sem-tokens`](exemplos/28-escuro-customizado-sem-tokens/) | O escuro do Bootstrap com a customização clara: os temas se misturam. |
-| [`29-escuro-customizado`](exemplos/29-escuro-customizado/) | Os tokens com valores escuros em `[data-bs-theme="dark"]`: o escuro customizado. |
-| [`30-utilitario-vence`](exemplos/30-utilitario-vence/) | `.card-body{padding:2rem}` contra `p-2`: o `!important` do utilitário vence. |
-| [`31-ordem-antes`](exemplos/31-ordem-antes/) | A folha própria ligada antes do Bootstrap: `.btn{border-radius:999px}` perde. |
-| [`32-ordem-depois`](exemplos/32-ordem-depois/) | A folha própria ligada depois do Bootstrap: a mesma regra vence. |
-| [`33-bootstrap-6-alfa`](exemplos/33-bootstrap-6-alfa/) | Horizonte: o Bootstrap 6 alfa, com `md:col-6 lg:col-4` e o script como módulo. |
-| [`34-icones`](exemplos/34-icones/) | Horizonte: Bootstrap Icons nos botões. |
+| [`05-trecho-completo`](exemplos/05-trecho-completo/) | O `<link>` como a documentação oferece, com `integrity` e `crossorigin`. |
+| [`06-tres-pecas`](exemplos/06-tres-pecas/) | `container`, `row` e `col`, uma dentro da outra: duas colunas na primeira linha, uma na segunda. |
+| [`07-partes-iguais`](exemplos/07-partes-iguais/) | `col` sem número: uma, duas, três, quatro e seis colunas dividem a linha em partes iguais. |
+| [`08-doze-partes`](exemplos/08-doze-partes/) | As 12 partes da linha: doze `col`, `col-12`, `col-6` + `col-6`, `col-4` + `col-8`, quatro `col-3`. |
+| [`09-soma`](exemplos/09-soma/) | Quando a soma não dá 12: `col-4` sozinha, `col-9` + `col-3`, `col-9` + `col-4` (a segunda desce) e `col-3` + `col`. |
+| [`10-col-md-6`](exemplos/10-col-md-6/) | `col-md-6`: uma embaixo da outra até 767 px, metade a partir de 768 px. |
+| [`11-tres-faixas`](exemplos/11-tres-faixas/) | `col-12 col-md-6 col-xl-3`: uma, duas e quatro por linha. |
+| [`12-container`](exemplos/12-container/) | `container`: a largura máxima cresce em degraus e a grade fica no centro. |
+| [`13-container-fluid`](exemplos/13-container-fluid/) | `container-fluid`: a largura toda, em qualquer janela. |
+| [`14-calhas`](exemplos/14-calhas/) | A calha entre as colunas: `row gx-0`, `row gx-2` e `row`, a de fábrica. |
+| [`15-grade-dentro`](exemplos/15-grade-dentro/) | Uma `row` dentro de uma `col-8`: a grade de dentro conta 12 partes na largura da coluna. |
+| [`16-pagina-na-grade`](exemplos/16-pagina-na-grade/) | Uma página inteira na grade: cabeçalho, chamada, destaques, conteúdo com lateral e rodapé. |
+| [`17-colunas`](exemplos/17-colunas/) | Os cartões do catálogo na grade: `col-12 col-sm-6 col-lg-4`. |
+| [`18-calhas-cartoes`](exemplos/18-calhas-cartoes/) | `row g-4`: calha também entre os cartões que descem para a linha de baixo. |
+| [`19-row-cols`](exemplos/19-row-cols/) | `row-cols-1 row-cols-sm-2 row-cols-lg-3`: quantas colunas por linha, em cada faixa. |
+| [`20-espaco-antes`](exemplos/20-espaco-antes/) | O cabeçalho antes dos utilitários de espaço. |
+| [`21-espaco`](exemplos/21-espaco/) | `py-3 mb-4` no cabeçalho e `mb-0` no título: utilitários de espaço. |
+| [`22-flex`](exemplos/22-flex/) | `d-flex justify-content-between align-items-center`: o cabeçalho em fila, com os itens nas pontas. |
+| [`23-texto`](exemplos/23-texto/) | `text-body-secondary`, `fw-bold` e a classe `h5` num `h3`: utilitários de texto. |
+| [`24-d-none`](exemplos/24-d-none/) | `d-none d-lg-block`: a lista "Mais pedidos" só aparece a partir de 992 px. |
+| [`25-botao`](exemplos/25-botao/) | O botão de fábrica, `btn btn-primary` e `btn btn-outline-secondary`. |
+| [`26-cartao`](exemplos/26-cartao/) | Um cartão: `card`, `card-img-top`, `card-body`, `card-title` e `card-text`. |
+| [`27-selo`](exemplos/27-selo/) | O cartão com o selo "Safra nova": `badge text-bg-success`. |
+| [`28-grade-de-cartoes`](exemplos/28-grade-de-cartoes/) | Os sete cartões numa lista que é a grade (`row-cols-*`), com `h-100` e `list-unstyled`. |
+| [`28b-sem-h-100`](exemplos/28b-sem-h-100/) | A mesma grade sem `h-100`: na mesma linha, cartões de alturas diferentes. |
+| [`29-filtros`](exemplos/29-filtros/) | O formulário dos filtros: `form-label`, `form-control` e `form-select` na grade. |
+| [`30-alerta`](exemplos/30-alerta/) | O aviso de entrega: `alert alert-warning`. |
+| [`31-lista`](exemplos/31-lista/) | A lista "Mais pedidos" na lateral: `list-group list-group-numbered` e `list-group-item`. |
+| [`32-menu`](exemplos/32-menu/) | O menu do cabeçalho: `nav nav-underline`, `nav-item`, `nav-link` e `active` com `aria-current="page"`. |
+| [`33-catalogo-bootstrap`](exemplos/33-catalogo-bootstrap/) | O catálogo inteiro em Bootstrap, sem customização: a versão que se mede ao lado da da aula 4. |
+| [`34-armadilha`](exemplos/34-armadilha/) | `--bs-primary` redefinido no `:root`: nenhum botão muda. |
+| [`35-tokens-alimentam`](exemplos/35-tokens-alimentam/) | O catálogo com `tokens.css` e `agrofeira-bootstrap.css`: fundo, texto, letra, cantos, links e o botão (pela variável do componente) com os valores do projeto. |
+| [`36-data-tema`](exemplos/36-data-tema/) | O site da aula 4 com `data-tema="escuro"` no `<html>` e a regra `[data-tema="escuro"]` nos tokens. |
+| [`37-escuro-customizado`](exemplos/37-escuro-customizado/) | `data-bs-theme="dark"` no `<html>` e os tokens com valores escuros em `[data-bs-theme="dark"]`. |
+| [`38-utilitario-vence`](exemplos/38-utilitario-vence/) | `.card-body{padding:2rem}` contra `p-2`: o `!important` do utilitário vence. |
+| [`39-bootstrap-6-alfa`](exemplos/39-bootstrap-6-alfa/) | Horizonte: o Bootstrap 6 alfa, com `md:col-6 lg:col-4`. |

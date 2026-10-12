@@ -1,7 +1,0 @@
-/* utilitarios.css — classes de uma declaração só, que vencem as outras */
-
-@layer utilitarios {
-  .texto-erro {
-    color: var(--cor-erro);
-  }
-}
