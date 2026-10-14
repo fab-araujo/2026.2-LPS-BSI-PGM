@@ -45,10 +45,14 @@ O que é cada pasta está no [README da aula](../).
 | [30-alerta](30-alerta/) | O aviso de entrega: `alert alert-warning`. |
 | [31-lista](31-lista/) | A lista "Mais pedidos" na lateral: `list-group list-group-numbered` e `list-group-item`. |
 | [33-catalogo-bootstrap](33-catalogo-bootstrap/) | O catálogo inteiro em Bootstrap, sem customização: a versão que se mede ao lado da da aula 4. |
+| [33b-com-fonte](33b-com-fonte/) | O catálogo em Bootstrap do exemplo 33 com a fonte Lora, do Google Fonts: a folha entra no filtro CSS da aba Network e o arquivo da fonte, no filtro Font. |
 | [34-armadilha](34-armadilha/) | `--bs-primary` redefinido no `:root`: nenhum botão muda. |
 | [35-tokens-alimentam](35-tokens-alimentam/) | O catálogo com `tokens.css` e `agrofeira-bootstrap.css`: fundo, texto, letra, cantos, links e o botão (pela variável do componente) com os valores do projeto. |
 | [35b-foco](35b-foco/) | O anel de foco do botão customizado com o token `--cor-foco` (`--bs-btn-focus-box-shadow`), ao lado do anel de fábrica. |
+| [35c-trio-com-espacos](35c-trio-com-espacos/) | O trio de cor do link escrito com espaços em vez de vírgulas: a declaração fica inválida e o link volta à cor do texto. |
 | [36-data-tema](36-data-tema/) | O site da aula 4 com `data-tema="escuro"` no `<html>` e a regra `[data-tema="escuro"]` nos tokens. |
+| [36b-sem-atributo](36b-sem-atributo/) | O site completo da aula 4 com o tema por atributo, mas sem o atributo na tag `html`, para acrescentá-lo pelo F12. |
 | [37-escuro-customizado](37-escuro-customizado/) | `data-bs-theme="dark"` no `<html>` e os tokens com valores escuros em `[data-bs-theme="dark"]`. |
 | [37b-escuro-sem-tokens](37b-escuro-sem-tokens/) | `data-bs-theme="dark"` sem os tokens escuros: a página fica misturada, metade clara e metade escura. |
+| [37c-sistema-escuro](37c-sistema-escuro/) | O sistema em tema escuro, sem o atributo: os tokens vão para o escuro pela media query e o Bootstrap continua claro. |
 | [38-utilitario-vence](38-utilitario-vence/) | `.card-body{padding:2rem}` contra `p-2`: o `!important` do utilitário vence. |

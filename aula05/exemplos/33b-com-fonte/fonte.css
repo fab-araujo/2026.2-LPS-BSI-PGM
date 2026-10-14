@@ -1,0 +1,7 @@
+/* fonte.css — os títulos na Lora, como na aula 3 */
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+}
