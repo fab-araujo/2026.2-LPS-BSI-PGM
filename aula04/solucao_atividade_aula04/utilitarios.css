@@ -1,0 +1,3 @@
+/* utilitarios.css — classes de um só efeito, na última camada: vencem qualquer
+   componente sem precisar de !important. O site ainda não precisa de nenhuma. */
+@layer utilitarios {}

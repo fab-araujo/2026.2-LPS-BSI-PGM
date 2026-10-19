@@ -1,0 +1,4 @@
+/* camadas.css — fixa a ordem das camadas, da mais fraca para a mais forte.
+   Precisa ser o primeiro <link> do head: a posição de uma camada é decidida
+   na primeira vez em que o nome dela aparece. */
+@layer reset, base, componentes, utilitarios;

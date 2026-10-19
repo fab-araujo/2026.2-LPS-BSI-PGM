@@ -1,0 +1,62 @@
+/* tokens.css — as decisões visuais da AgroFeira, na camada base.
+   Paleta do açaí: marca roxa e fundo lilás claro no tema claro; no escuro, a marca
+   passa a um lilás claro. Contraste medido no painel de estilos (Chrome), no endereço
+   público; o do tema escuro, com o tema emulado. */
+
+@layer base {
+  :root {
+    /* Cores do tema claro */
+    --cor-fundo: #ece3f5;
+    --cor-superficie: #ffffff;
+    --cor-texto: #231a2d;         /* 13,42:1 sobre o fundo (AAA); 16,7:1 sobre a superfície (AAA) */
+    --cor-texto-suave: #4e3d5e;   /* 7,84:1 sobre o fundo (AAA); 9,75:1 sobre a superfície (AAA) */
+    --cor-marca: #5b2a86;         /* 7,96:1 sobre o fundo (AAA); 9,9:1 sobre a superfície (AAA) */
+    --cor-sobre-marca: #ffffff;   /* 9,9:1 sobre a marca (AAA) */
+    --cor-borda: #cdbfdd;
+
+    /* Estados (Passo 7) */
+    --cor-marca-forte: #3f1b61;   /* o fundo do botão com o ponteiro em cima: 13,63:1 com o --cor-sobre-marca (AAA; régua 4,5:1) */
+    --cor-foco: #0b4f9c;          /* o anel de foco: 6,46:1 sobre o fundo e 8,04:1 sobre a superfície (régua dos contornos: 3:1) */
+
+    /* Letras: o texto na do sistema; os títulos na Lora, do Google Fonts */
+    --fonte-texto: system-ui, sans-serif;
+    --fonte-titulo: "Lora", serif;
+
+    /* Escala dos títulos: multiplicador 1,25; cada degrau é o anterior vezes 1,25
+       1 × 1,25 = 1,25 · 1,25 × 1,25 = 1,563 · 1,563 × 1,25 = 1,953 */
+    --tamanho-texto: 1rem;
+    --tamanho-h3: 1.25rem;
+    --tamanho-h2: 1.563rem;
+    --tamanho-h1: 1.953rem;
+
+    /* Ritmo vertical */
+    --espaco-1: 0.5rem;
+    --espaco-2: 1rem;
+    --espaco-3: 1.5rem;
+    --espaco-4: 2rem;
+
+    /* Cantos e sombra */
+    --raio: 12px;
+    --sombra: 0 2px 6px rgb(0 0 0 / 15%);
+  }
+
+  /* O tema escuro: só os tokens de cor mudam, com os mesmos nomes (depois do :root claro, vence pela ordem) */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cor-fundo: #1d1526;
+      --cor-superficie: #2b2036;
+      --cor-texto: #f1e9f8;        /* 14,95:1 sobre o fundo (AAA); 13,03:1 sobre a superfície (AAA) */
+      --cor-texto-suave: #cdbddc;  /* 10,03:1 sobre o fundo (AAA); 8,74:1 sobre a superfície (AAA) */
+      --cor-marca: #c9a2f0;        /* 8,35:1 sobre o fundo (AAA); 7,27:1 sobre a superfície (AAA) */
+      --cor-sobre-marca: #1d1526;  /* 8,35:1 sobre a marca (AAA) */
+      --cor-borda: #4a3a5c;
+      --cor-marca-forte: #e1c6f8;  /* 11,48:1 com o --cor-sobre-marca (AAA) */
+      --cor-foco: #82c0ff;         /* 9,21:1 sobre o fundo e 8,02:1 sobre a superfície (régua: 3:1) */
+    }
+  }
+
+  /* Campos, barra de rolagem e cores de fábrica acompanham o tema */
+  :root {
+    color-scheme: light dark;
+  }
+}

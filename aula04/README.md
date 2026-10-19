@@ -2,10 +2,11 @@
 
 A aula 4 foi a distância: a **apostila**, no SIGAA, faz o papel da aula, e esta pasta guarda os exemplos que ela cita.
 
-Duas pastas:
+Três pastas:
 
 - `exemplos/` — os exemplos da apostila, na ordem em que aparecem nela;
-- `inicio/` — o material pronto da Atividade 4: a página `catalogo.html`, só com a marcação, e as sete fotos dos produtos. O roteiro da atividade, no SIGAA, diz como levá-lo para o seu repositório.
+- `inicio/` — o material pronto da Atividade 4: a página `catalogo.html`, só com a marcação, e as sete fotos dos produtos. O roteiro da atividade, no SIGAA, diz como levá-lo para o seu repositório;
+- [`solucao_atividade_aula04/`](solucao_atividade_aula04/) — ⚠️ **a solução da Atividade 4**, publicada depois do prazo de entrega.
 
 ## `exemplos/`
 

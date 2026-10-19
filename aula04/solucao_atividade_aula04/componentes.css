@@ -1,0 +1,233 @@
+/* componentes.css — as peças do site, com as suas partes, os estados e as container queries. */
+@layer componentes {
+  /* O link de pular: fora da tela, até receber o foco */
+  .pular {
+    position: absolute;
+    top: -10rem;
+    left: var(--espaco-1);
+    z-index: 1;
+    padding: var(--espaco-1) var(--espaco-2);
+    background-color: var(--cor-marca-forte);
+    color: var(--cor-sobre-marca);
+  }
+
+  .pular:focus {
+    top: var(--espaco-1);
+  }
+
+  /* Cabeçalho, menu e rodapé */
+  .cabecalho-site {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    padding: var(--espaco-2);
+  }
+
+  /* No catálogo o menu está fora do cabeçalho, e leva o fundo da marca com ele */
+  .pagina-catalogo > nav {
+    background-color: var(--cor-marca);
+    padding: var(--espaco-2);
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu a {
+    color: var(--cor-sobre-marca);
+  }
+
+  .menu a[aria-current="page"] {
+    font-weight: 700;
+  }
+
+  .rodape-site {
+    border-top: 1px solid var(--cor-borda);
+    color: var(--cor-texto-suave);
+    padding: var(--espaco-2);
+  }
+
+  /* A home */
+  .figura-destaque figcaption {
+    color: var(--cor-texto-suave);
+    margin-top: var(--espaco-1);
+  }
+
+  .busca input[type="search"] {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 0.5em;
+  }
+
+  .aviso {
+    background-color: var(--cor-superficie);
+    border: 2px solid var(--cor-marca);
+    border-radius: var(--raio);
+    padding: var(--espaco-2);
+    margin-top: var(--espaco-3);
+    max-width: 34rem;
+  }
+
+  /* Os botões do site: a lupa, o do cadastro, os das categorias e os dos cartões */
+  .busca button,
+  .formulario-cadastro button,
+  .barra-categorias button,
+  .cartao-produto button {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    border: none;
+    border-radius: var(--raio);
+    padding: 0.5em 1em;
+  }
+
+  /* Com o ponteiro em cima, o fundo escurece (no tema claro) */
+  .busca button:hover,
+  .formulario-cadastro button:hover,
+  .barra-categorias button:hover,
+  .cartao-produto button:hover {
+    background-color: var(--cor-marca-forte);
+  }
+
+  /* A barra de categorias: uma fila de botões que quebra de linha quando não cabem */
+  .barra-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaco-1);
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--espaco-3);
+  }
+
+  /* A grade dos cartões: as colunas se ajustam sozinhas, cada uma com no mínimo 12rem */
+  main .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: var(--espaco-2);
+    list-style: none;
+    padding: 0;
+  }
+
+  /* A lista da lateral: uma coluna só */
+  aside .lista-produtos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espaco-2);
+    list-style: none;
+    padding: 0;
+  }
+
+  .destaque {
+    grid-column: 1 / -1;
+  }
+
+  /* O cartão: o espaço entre eles e a largura vêm da grade */
+  .cartao-produto {
+    container-type: inline-size;
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    padding: var(--espaco-2);
+  }
+
+  .cartao-produto article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--espaco-1);
+  }
+
+  .cartao-produto img {
+    border-radius: var(--raio);
+  }
+
+  .cartao-produto h3 {
+    margin-top: var(--espaco-1);
+    margin-bottom: 0;
+  }
+
+  .cartao-produto .produtor {
+    color: var(--cor-texto-suave);
+    margin-bottom: 0;
+  }
+
+  .cartao-produto .preco {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  /* Container query — o cartão deita a foto ao lado do texto quando o espaço dele passa de 26rem, e não pela largura da janela. */
+  @container (min-width: 26rem) {
+    .cartao-produto article {
+      display: grid;
+      grid-template-columns: 10rem 1fr;
+      align-items: start;
+      gap: var(--espaco-1) var(--espaco-2);
+    }
+
+    .cartao-produto img {
+      grid-row: span 4;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cartao-produto h3 {
+      margin-top: 0;
+    }
+
+    .cartao-produto button {
+      justify-self: start;
+    }
+  }
+
+  /* :has() — contorna o cartão inteiro, na cor do anel, quando o botão dentro dele recebe o foco do teclado. */
+  .cartao-produto:has(button:focus-visible) {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 3px;
+  }
+
+  /* A safra */
+  .tabela-safra th,
+  .tabela-safra td {
+    padding: var(--espaco-1) var(--espaco-2);
+  }
+
+  .tabela-safra thead th {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+  }
+
+  .tabela-safra td {
+    background-color: var(--cor-superficie);
+  }
+
+  /* O cadastro */
+  .formulario-cadastro > fieldset {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: var(--espaco-2);
+    margin-bottom: var(--espaco-3);
+  }
+
+  .formulario-cadastro input[type="text"],
+  .formulario-cadastro input[type="email"],
+  .formulario-cadastro input[type="tel"],
+  .formulario-cadastro input[type="number"],
+  .formulario-cadastro input[type="date"],
+  .formulario-cadastro select,
+  .formulario-cadastro textarea {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 0.5em;
+    background-color: var(--cor-superficie);
+  }
+
+  /* O Sobre */
+  .pergunta {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: var(--espaco-2);
+    margin-bottom: var(--espaco-1);
+    max-width: 34rem;
+  }
+}
