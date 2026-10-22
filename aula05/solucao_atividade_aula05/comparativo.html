@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — comparativo, solução de referência</title>
+    <link rel="stylesheet" href="camadas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="componentes.css">
+    <link rel="stylesheet" href="utilitarios.css">
+
+</head>
+
+<body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho-site">
+        <h1>AgroFeira</h1>
+        <nav aria-label="Principal">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="safra.html">Safra</a></li>
+                <li><a href="cadastro-produtor.html">Cadastro de produtor</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo">
+        <h2>Comparativo: o catálogo autoral e o catálogo em Bootstrap</h2>
+        <p>Solução de referência da Atividade 5 (aqui vão o seu nome e a sua matrícula).</p>
+        <p>Repositório: <a href="https://github.com/fab-araujo/2026.2-LPS-BSI-PGM">https://github.com/fab-araujo/2026.2-LPS-BSI-PGM</a></p>
+        <ul>
+            <li>Site: <a href="https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/solucao_atividade_aula05/">https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/solucao_atividade_aula05/</a></li>
+            <li>Catálogo autoral: <a href="https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/solucao_atividade_aula05/catalogo.html">https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/solucao_atividade_aula05/catalogo.html</a></li>
+            <li>Catálogo em Bootstrap: <a href="https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/solucao_atividade_aula05/catalogo-bootstrap.html">https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/solucao_atividade_aula05/catalogo-bootstrap.html</a></li>
+        </ul>
+
+        <h3>O catálogo em três larguras</h3>
+        <p>Em 360 px o catálogo em Bootstrap mostra uma coluna de cartões (sete fileiras), sem a lista "Mais pedidos", e o teste da rolagem deu <code>false</code> (Captura 1).</p>
+        <p>Em 768 px são duas colunas de cartões (2 + 2 + 2 + 1), ainda sem a lista "Mais pedidos", e o teste da rolagem deu <code>false</code>.</p>
+        <p>Em 1200 px são três colunas (3 + 3 + 1, com o cartão do jambu sozinho na terceira fileira) e a lista "Mais pedidos" aparece à direita, ao lado do aviso; o teste da rolagem deu <code>false</code> (Captura 2). A passagem de uma para duas colunas acontece em 576 px, e a de duas para três colunas, com a lista, em 992 px.</p>
+        <figure>
+            <img src="captura-1-360.png" width="4200" height="1714"
+                alt="O catálogo em Bootstrap numa janela de 360 px: a barra do modo dispositivo com a largura 360, uma coluna de cartões com o aviso amarelo e o cartão do açaí, e o Console com o teste da rolagem e a resposta false">
+            <figcaption>Captura 1 — o catálogo em Bootstrap em 360 px: uma coluna, sem a lista "Mais pedidos", e o Console com a resposta false.</figcaption>
+        </figure>
+        <figure>
+            <img src="captura-2-1200-antes.png" width="4200" height="1714"
+                alt="O catálogo só com o Bootstrap numa janela de 1200 px: fundo branco, botões Adicionar azuis, três colunas de cartões e a lista Mais pedidos à direita do aviso, com o Console mostrando false três vezes">
+            <figcaption>Captura 2 — o catálogo só com o Bootstrap em 1200 px (o "antes"): fundo branco, botões azuis, três colunas e a lista "Mais pedidos" à direita.</figcaption>
+        </figure>
+
+        <h3>1. A customização</h3>
+        <table class="tabela-safra">
+            <caption>As variáveis do Bootstrap que o agrofeira-bootstrap.css redefine</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Variável alterada</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Por quê</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><code>--bs-body-bg</code></th>
+                    <td><code>--cor-fundo</code> (#ece3f5)</td>
+                    <td>É o fundo da página e, como os cartões e a lista "Mais pedidos" leem a mesma variável, o fundo deles: na Captura 4 tudo ficou lilás, e na Captura 2 era branco.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><code>--bs-body-color</code></th>
+                    <td><code>--cor-texto</code> (#231a2d)</td>
+                    <td>É a cor do texto da página, como o título "Produtos da semana": de cinza-escuro (#212529) para um quase preto arroxeado.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><code>--bs-secondary-color</code></th>
+                    <td><code>--cor-texto-suave</code> (#4e3d5e)</td>
+                    <td>É a cor da classe <code>text-body-secondary</code>, a do nome do produtor em cada cartão.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><code>--bs-body-font-family</code></th>
+                    <td><code>--fonte-texto</code> (system-ui, sans-serif)</td>
+                    <td>É a letra do texto da página; na Captura 4 ela é igual à da Captura 2, porque a letra do meu token é a do sistema.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><code>--bs-border-radius</code></th>
+                    <td><code>--raio</code> (12px)</td>
+                    <td>São os cantos do cartão, do alerta e do botão: de 0,375rem (6 px) para 12 px, o que se vê nos cantos do cartão do açaí.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><code>--bs-link-color-rgb</code></th>
+                    <td><code>--cor-marca-rgb</code> (91, 42, 134)</td>
+                    <td>É a cor do link "Início": a regra <code>a</code> lê esse trio, e não a <code>--bs-link-color</code>; o link deixou de ser azul (13, 110, 253) e ficou roxo.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><code>--bs-link-hover-color-rgb</code></th>
+                    <td><code>--cor-marca-forte-rgb</code> (63, 27, 97)</td>
+                    <td>É a cor do link com o ponteiro em cima, que a regra <code>a:hover</code> lê: roxo mais escuro, no lugar do azul (10, 88, 202).</td>
+                </tr>
+                <tr>
+                    <th scope="row"><code>--bs-btn-bg</code> e <code>--bs-btn-border-color</code></th>
+                    <td><code>--cor-marca</code> (#5b2a86)</td>
+                    <td>São o fundo e a borda do botão "Adicionar" no estado normal, as variáveis que a regra <code>.btn-primary</code> lê (Captura 3): roxo no lugar do #0d6efd.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><code>--bs-btn-color</code>, <code>--bs-btn-hover-color</code> e <code>--bs-btn-active-color</code></th>
+                    <td><code>--cor-sobre-marca</code> (#ffffff)</td>
+                    <td>É o texto do botão, branco nos três estados, para ter contraste sobre o roxo.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><code>--bs-btn-hover-bg</code>, <code>--bs-btn-hover-border-color</code>, <code>--bs-btn-active-bg</code> e <code>--bs-btn-active-border-color</code></th>
+                    <td><code>--cor-marca-forte</code> (#3f1b61)</td>
+                    <td>São o fundo e a borda do botão com o ponteiro em cima e pressionado: roxo mais escuro, no lugar dos azuis #0b5ed7 e #0a58ca.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Por que a <code>--bs-primary</code> sozinha não muda o botão.</strong> No F12 troquei o valor da <code>--bs-primary</code> no <code>:root</code> por <code>red</code>: a linha ficou <code>red</code>, e o botão continuou azul, rgb(13, 110, 253). A Captura 3 mostra o motivo: o fundo do botão está na regra <code>.btn-primary</code>, do arquivo <code>_buttons.scss</code>, que declara <code>--bs-btn-bg: #0d6efd</code>, um valor escrito por extenso, e a regra <code>.btn</code> pinta o fundo com <code>var(--bs-btn-bg)</code>. A variável que o botão lê é a <code>--bs-btn-bg</code>, e não a <code>--bs-primary</code>: na conversão do Sass para CSS, a cor principal virou um número fixo dentro do botão (seção 9.3). Por isso o <code>agrofeira-bootstrap.css</code> redefine a <code>--bs-btn-bg</code> e as outras <code>--bs-btn-…</code> na regra <code>.btn-primary</code>.</p>
+        <p>O antes e o depois, nas Capturas 2 e 4, em 1200 px e no tema claro. Quatro coisas mudaram:</p>
+        <ul>
+            <li>O fundo e a cor do texto passaram do branco (#fff) e do cinza-escuro (#212529) de fábrica para #ece3f5 (<code>--cor-fundo</code>) e #231a2d (<code>--cor-texto</code>).</li>
+            <li>O botão "Adicionar" passou do azul #0d6efd, e #0b5ed7 com o ponteiro em cima, para o roxo #5b2a86 (<code>--cor-marca</code>), e #3f1b61 com o ponteiro em cima (<code>--cor-marca-forte</code>).</li>
+            <li>O link "Início" passou do azul rgb(13, 110, 253), e rgb(10, 88, 202) com o ponteiro em cima, para rgb(91, 42, 134) e rgb(63, 27, 97), os trios de <code>--cor-marca-rgb</code> e <code>--cor-marca-forte-rgb</code>.</li>
+            <li>Os cantos do cartão, do alerta e do botão passaram de 0,375rem (6 px) para 12 px (<code>--raio</code>).</li>
+        </ul>
+        <figure>
+            <img src="captura-3-regra-botao.png" width="4200" height="1714"
+                alt="O painel Styles do F12 com o botão Adicionar selecionado: a regra .btn-primary, do arquivo _buttons.scss, linha 21, com --bs-btn-bg: #0d6efd e as outras variáveis do botão">
+            <figcaption>Captura 3 — a regra <code>.btn-primary</code> no painel Styles, com <code>--bs-btn-bg: #0d6efd</code>.</figcaption>
+        </figure>
+        <figure>
+            <img src="captura-4-1200-depois.png" width="4200" height="1714"
+                alt="O catálogo com a customização numa janela de 1200 px, no tema claro: fundo lilás, link Início e botões Adicionar roxos, cantos mais arredondados, três colunas de cartões e a lista Mais pedidos à direita">
+            <figcaption>Captura 4 — o catálogo com a customização em 1200 px, no tema claro (o "depois"): fundo lilás, botões e link roxos, cantos de 12 px.</figcaption>
+        </figure>
+
+        <h3>2. As medições</h3>
+        <p>Medi no Chrome 155, em https://fab-araujo.github.io/2026.2-LPS-BSI-PGM/aula05/solucao_atividade_aula05/ (o <code>catalogo.html</code> e o <code>catalogo-bootstrap.html</code>), com o modo dispositivo desligado, com <strong>Disable cache</strong> (aba Network) e <strong>Disable network cache</strong> (aba Performance) marcadas, CPU e Network em No throttling, e a área da página de 1545 por 857 nas duas páginas (resposta do Console: <code>(2) [1545, 857]</code>). O LCP é de cinco cargas de cada página, sem descartar nenhuma.</p>
+        <table class="tabela-safra">
+            <caption>Os números medidos nas duas páginas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Critério</th>
+                    <th scope="col">Autoral (catalogo.html)</th>
+                    <th scope="col">Bootstrap (catalogo-bootstrap.html)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">CSS transferido</th>
+                    <td>6,4 kB (1,6 kB do Google Fonts)</td>
+                    <td>35,0 kB (bootstrap.min.css 33,1 kB + tokens.css 1,3 kB + agrofeira-bootstrap.css 0,5 kB)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Fontes</th>
+                    <td>37,8 kB</td>
+                    <td>0,0 kB</td>
+                </tr>
+                <tr>
+                    <th scope="row">Imagens</th>
+                    <td>387 kB</td>
+                    <td>387 kB</td>
+                </tr>
+                <tr>
+                    <th scope="row">Documento</th>
+                    <td>1,8 kB</td>
+                    <td>1,9 kB</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total transferido</th>
+                    <td>434 kB (sem a linha favicon.ico)</td>
+                    <td>424 kB (sem a linha favicon.ico)</td>
+                </tr>
+                <tr>
+                    <th scope="row">LCP (o valor do meio)</th>
+                    <td>0,22 s (0,38; 0,21; 0,23; 0,22; 0,22)</td>
+                    <td>0,16 s (0,16; 0,17; 0,16; 0,16; 0,16)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Linhas de CSS próprio</th>
+                    <td>461 linhas (1 + 44 + 76 + 99 + 240 + 1: camadas, reset, tokens, base, componentes e utilitarios)</td>
+                    <td>99 linhas (76 + 23: tokens.css e agrofeira-bootstrap.css)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Classes no cartão do açaí</th>
+                    <td>4 classes em 3 elementos</td>
+                    <td>14 classes em 8 elementos, sem o selo (com o selo: 16 classes em 9 elementos)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>O número de cada tipo é o do filtro do F12, e o total é o da barra de resumo; os arredondamentos não fecham exatamente. No autoral, 1,8 + 6,4 + 37,8 + 387 = 433,0 kB contra os 434 kB do total, e as sete linhas de CSS somam 6,5 kB contra os 6,4 kB do filtro. No Bootstrap, 1,9 + 35,0 + 0,0 + 387 = 423,9 kB contra 424 kB, e as três linhas de CSS somam 34,9 kB contra 35,0 kB. A linha favicon.ico não apareceu em nenhuma das duas listas, por isso não está nos totais. O valor do meio do LCP é o terceiro dos cinco em ordem crescente (autoral: 0,21; 0,22; 0,22; 0,23; 0,38; Bootstrap: 0,16; 0,16; 0,16; 0,16; 0,17).</p>
+        <figure>
+            <img src="captura-5-rede-autoral.png" width="4200" height="1714"
+                alt="A aba Network do catalogo.html, com o filtro All, Disable cache marcada, linhas grandes e as 16 linhas da lista; a barra de resumo diz 16 requests e 434 kB transferred">
+            <figcaption>Captura 5 — a aba Network do <code>catalogo.html</code>: All, Disable cache marcada, linhas grandes, 16 requests e 434 kB transferred.</figcaption>
+        </figure>
+        <figure>
+            <img src="captura-6-rede-bootstrap.png" width="4200" height="1714"
+                alt="A aba Network do catalogo-bootstrap.html, com o filtro All, Disable cache marcada, linhas grandes e as 11 linhas da lista; a barra de resumo diz 11 requests e 424 kB transferred">
+            <figcaption>Captura 6 — a aba Network do <code>catalogo-bootstrap.html</code>: o mesmo, com 11 requests e 424 kB transferred.</figcaption>
+        </figure>
+        <figure>
+            <img src="captura-7-lcp-autoral.png" width="4200" height="1714"
+                alt="O painel Performance do catalogo.html: o cartão Largest Contentful Paint com 0,22 s, o LCP element img e a caixa Disable network cache marcada">
+            <figcaption>Captura 7 — o LCP do <code>catalogo.html</code> na 4ª das cinco cargas: 0,22 s, o elemento é uma <code>img</code> (a pimenta.jpg), com Disable network cache marcada.</figcaption>
+        </figure>
+        <figure>
+            <img src="captura-8-lcp-bootstrap.png" width="4200" height="1714"
+                alt="O painel Performance do catalogo-bootstrap.html: o cartão Largest Contentful Paint com 0,16 s, o LCP element img.card-img-top e a caixa Disable network cache marcada">
+            <figcaption>Captura 8 — o LCP do <code>catalogo-bootstrap.html</code> na 3ª das cinco cargas: 0,16 s, o elemento é <code>img.card-img-top.img-…</code> (a farinha.jpg), com Disable network cache marcada.</figcaption>
+        </figure>
+
+        <h3>3. A leitura dos números</h3>
+        <p><strong>Os bytes.</strong> O Bootstrap baixou mais CSS: 35,0 kB contra 6,4 kB do autoral, 5,5 vezes mais (35,0 ÷ 6,4). Sem a folha do Google Fonts (1,6 kB), o autoral tem 4,8 kB de CSS e a conta sobe para 7,3 vezes (35,0 ÷ 4,8). O total transferido da página não responde isso, porque soma o que não é CSS: as fotos são as mesmas nas duas páginas (387 kB, 89% do total de 434 kB no autoral e 91% do total de 424 kB no Bootstrap), e a fonte só entra no autoral (37,8 kB, fora a folha de 1,6 kB). Por isso o autoral, com 28,6 kB a menos de CSS, ficou 10 kB acima no total (434 kB contra 424 kB): a fonte pesou mais do que o CSS que ele economizou.</p>
+        <p><strong>O LCP.</strong> O valor do meio foi 0,22 s no autoral e 0,16 s no Bootstrap, uma diferença de 0,06 s. Entre as cinco cargas, o autoral variou 0,17 s (de 0,21 s a 0,38 s, e a primeira carga foi a mais lenta) e o Bootstrap, 0,01 s (de 0,16 s a 0,17 s). A diferença de 0,06 s entre as páginas é menor que a variação do autoral (0,17 s) e maior que a do Bootstrap (0,01 s). O número permite afirmar que, nesta sessão, as cinco cargas do Bootstrap (0,16 s a 0,17 s) ficaram abaixo das cinco do autoral (0,21 s a 0,38 s), e que as duas páginas ficaram muito abaixo dos 2,5 s que o Chrome chama de bom. Não permite afirmar que o Bootstrap é mais rápido nem que o framework causou a diferença: além do Bootstrap, só o <code>catalogo.html</code> baixa a folha e a fonte do Google Fonts, dois pedidos a outro servidor (e a folha é do <code>head</code>, que o navegador espera antes de pintar: seções 10.4 e 10.6), e o conteúdo é diferente (9 cartões contra 7, e o elemento do LCP foi a pimenta.jpg no autoral e a farinha.jpg no Bootstrap, nas cinco cargas de cada). O LCP mede a página inteira, e não o framework.</p>
+        <p><strong>As linhas e as classes.</strong> Quem escreveu mais CSS fui eu no autoral: 461 linhas contra 99 do Bootstrap, 4,7 vezes mais. No HTML é o contrário: o cartão do açaí do Bootstrap, sem o selo, tem 14 classes em 8 elementos, contra 4 classes em 3 elementos no <code>catalogo.html</code>, 3,5 vezes mais classes. O trabalho de mudar uma decisão que vale para todos os cartões mora em lugares diferentes. No autoral, ele está no CSS, em uma regra ou num token: os cantos de todos os cartões são o <code>--raio</code>, a linha 44 do <code>tokens.css</code>, e o respiro e a sombra estão na regra <code>.cartao-produto</code> do <code>componentes.css</code>. No Bootstrap, as classes estão nos sete <code>li</code> do HTML, cada um com as suas 14 (98 ao todo), e só o que passa por variável, como o <code>--bs-border-radius</code> ligado ao <code>--raio</code>, se muda num lugar só. Os totais de linhas não incluem a mesma coisa. Os 461 do autoral são as seis folhas que servem as cinco páginas do site, e o <code>componentes.css</code> (240 linhas) traz regras que o <code>catalogo.html</code> não usa, como a <code>.tabela-safra</code> (da safra.html), a <code>.formulario-cadastro</code> (do cadastro-produtor.html) e a <code>.pergunta</code> (da sobre.html). Os 99 do Bootstrap são o <code>tokens.css</code> inteiro (76 linhas, o mesmo das duas versões, com os tamanhos, o espaço e o tema escuro) mais as 23 do <code>agrofeira-bootstrap.css</code>, para uma página só, e não contam as linhas do <code>bootstrap.min.css</code>, que eu não escrevi; o <code>reset.css</code> (44 linhas) só entra no autoral, porque o Reboot faz esse papel.</p>
+        <p><strong>O que a medição não mostra.</strong> Primeiro, a volta ao site (seção 10.3): medi só a primeira visita, com o cache desligado. Quem volta já tem o <code>bootstrap.min.css</code> guardado, e numa recarga com o cache ligado a barra de resumo da página em Bootstrap marcou só 150 B transferidos; os 33,1 kB aparecem uma vez só, e a tabela não mostra isso. Segundo, o que o navegador precisa ler (seções 10.3 e 10.4): a tabela traz só o transferido, que vem comprimido, e o CSS do Bootstrap aberto tem 236 kB, contra 20,0 kB do autoral (a coluna do recurso, no filtro CSS). Terceiro, o LCP não separa o peso do CSS do custo do segundo servidor, o da jsDelivr, nem das outras diferenças entre as páginas, e foi medido numa conexão rápida, sem limitação de rede, numa sessão só (seção 10.6). A contagem de requisições (16 no autoral e 11 no Bootstrap) não entra como argumento: no HTTP/2 e no HTTP/3 muitos pedidos viajam juntos numa conexão por servidor, e o número não mostra o tempo de cada um nem o segundo servidor (seção 10.5).</p>
+        <p><strong>Controle e trabalho.</strong> O <code>catalogo.html</code> tem cinco coisas que o meu <code>catalogo-bootstrap.html</code> não tem, e cada uma pediu linhas minhas no <code>componentes.css</code>: o link de pular (Atividades 2 e 4), com as regras <code>.pular</code> e <code>.pular:focus-visible</code>, 14 linhas, e a decisão de deixá-lo fora da tela até o foco do teclado; o menu (Atividades 2 e 3), com 10 linhas (<code>.menu</code>, <code>.menu a</code> e a do <code>aria-current</code>), fora o fundo da <code>nav</code> no <code>base.css</code>; a barra de categorias (Atividade 4), com 8 linhas (flex, quebra de linha e espaço) e os seis botões no HTML; a container query do cartão (Atividade 4), com 15 linhas, que deitam o cartão a partir de 26rem; e o <code>:has()</code> do foco (Atividade 4), com 4 linhas, que dão contorno ao cartão quando o botão dele recebe o foco. São 51 das 240 linhas do <code>componentes.css</code>, e cada uma é uma decisão que as classes do Bootstrap não tomam por mim: isso é controle, e o preço do controle é o trabalho de escrever e manter essas linhas. No sentido contrário, o <code>catalogo-bootstrap.html</code> tem o aviso de entrega, a frase de abertura e o selo "Safra nova", que o <code>catalogo.html</code> não tem, e a grade, o alerta e os cartões vieram só de classes, sem nenhuma linha minha: esse é o trabalho que o framework tirou de mim. Para pôr as minhas cores no Bootstrap precisei saber quatro coisas dele (Parte B): que as decisões ficam em variáveis <code>--bs-*</code>; que o botão lê as <code>--bs-btn-…</code> da regra <code>.btn-primary</code>, e não a <code>--bs-primary</code> (Captura 3); que o link lê o trio <code>--bs-link-color-rgb</code>, que pede vírgulas; e que o <code>agrofeira-bootstrap.css</code> tem de vir depois do Bootstrap e fora de qualquer <code>@layer</code>. E há decisões do meu catálogo que as classes do Bootstrap não tomam: os pontos de quebra. No Bootstrap eles são fixos e em pixels (576, 768, 992, 1200 e 1400 px, seção 4.1): no meu teste o catálogo passou de uma para duas colunas em 576 px e ganhou a lista em 992 px, valores que eu não escolhi. No <code>catalogo.html</code>, o ponto vem do conteúdo, em rem (42rem no <code>base.css</code>, e uma grade com <code>minmax(12rem, 1fr)</code> que muda o número de colunas sozinha).</p>
+
+        <h3>4. Conclusão</h3>
+        <p>Usaria o Bootstrap numa página cheia de fotos e de prazo curto, como o catálogo, porque as fotos são 387 kB dos 424 kB e os 35,0 kB do CSS dele pesam pouco, e ele a entregou com 99 linhas de CSS próprio em vez de 461; não usaria numa página só de texto, porque nela o CSS seria quase tudo o que se baixa, e ele custa 35,0 kB contra os 6,4 kB do autoral.</p>
+    </main>
+    <footer class="rodape-site">
+        <p>AgroFeira — da roça para a mesa, em Paragominas.</p>
+    </footer>
+</body>
+
+</html>

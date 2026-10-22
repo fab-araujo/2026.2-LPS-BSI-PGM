@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — painel lateral só retrátil, na grade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="sticky-top bg-body-tertiary">
+      <div class="container-fluid d-flex align-items-center py-2">
+        <button class="btn btn-outline-secondary me-3"
+          type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#lateral"
+          aria-controls="lateral">Menu</button>
+        <p class="fw-bold mb-0">AgroFeira · Painel do produtor</p>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <aside class="offcanvas offcanvas-start"
+            tabindex="-1" id="lateral"
+            aria-labelledby="lateral-titulo">
+            <div class="offcanvas-header">
+              <h2 class="offcanvas-title h5"
+                id="lateral-titulo">Painel do produtor</h2>
+              <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Fechar"></button>
+            </div>
+            <div class="offcanvas-body">
+              <nav aria-label="Painel">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="#">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pedidos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Entregas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Perfil</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+        </div>
+        <main class="col-lg-9">
+          <h1 class="h3 mt-3">Produtos</h1>
+          <nav aria-label="Situação dos produtos">
+            <ul class="nav nav-underline mb-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Todos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Em estoque</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Esgotados</a>
+              </li>
+            </ul>
+          </nav>
+          <ul>
+            <li>Açaí médio: 24 litros, R$ 12,00 o litro, à venda</li>
+            <li>Farinha d'água: 12 latas, R$ 90,00 a lata, à venda</li>
+            <li>Banana-prata: 40 dúzias, R$ 8,00 a dúzia, à venda</li>
+            <li>Pimenta-do-reino: 3 quilos, R$ 30,00 o quilo, estoque baixo</li>
+            <li>Cacau em amêndoa: 0 quilos, R$ 25,00 o quilo, esgotado</li>
+            <li>Polpa de cupuaçu: 18 quilos, R$ 22,00 o quilo, à venda</li>
+            <li>Jambu: 15 maços, R$ 4,00 o maço, à venda</li>
+          </ul>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

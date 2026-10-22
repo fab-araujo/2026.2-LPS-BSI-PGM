@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — diálogo aberto por um botão</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="py-3 mb-4">
+        <h1 class="mb-0">AgroFeira</h1>
+      </header>
+      <main>
+        <h2 class="mb-3">Produtos da semana</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card">
+              <img src="acai.jpg" class="card-img-top img-fluid" width="640" height="480"
+                alt="Tigela de açaí batido, com duas colheres de plástico">
+              <div class="card-body">
+                <p class="badge text-bg-success">Safra nova</p>
+                <h3 class="card-title h5">Açaí médio</h3>
+                <p class="card-text text-body-secondary">Sítio Boa Vista, Colônia do Uraim</p>
+                <p class="card-text fw-bold">R$ 12,00 o litro</p>
+                <button type="button" class="btn btn-primary">Adicionar</button>
+                <button type="button" class="btn btn-outline-secondary"
+                  data-bs-toggle="modal" data-bs-target="#detalhe-acai">Ver detalhes</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal fade" id="detalhe-acai" tabindex="-1" aria-labelledby="detalhe-acai-titulo">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="detalhe-acai-titulo">Açaí médio</h2>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Açaí médio batido na hora, grosso, sem açúcar e
+              sem corante. Vem em pote de um litro, pronto para
+              a tigela ou para acompanhar o peixe.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — required num campo escondido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="agrofeira-bootstrap.css">
+  </head>
+  <body>
+    <main class="container py-4">
+      <h1 class="h3 mb-5">Receber o pedido</h1>
+      <form class="row g-3" action="enviado.html">
+        <div class="col-12 col-md-6">
+          <label for="nome" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="nome" name="nome" value="Maria da Silva" required>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" value="maria@exemplo.com.br" required>
+        </div>
+        <fieldset class="col-12">
+          <legend class="h6">Forma de recebimento</legend>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="retirada" name="recebimento" value="retirada" checked>
+            <label class="form-check-label" for="retirada">Retirada na feira</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="entrega" name="recebimento" value="entrega">
+            <label class="form-check-label" for="entrega">Entrega no endereço</label>
+          </div>
+        </fieldset>
+        <fieldset class="endereco col-12">
+          <legend class="h6">Endereço da entrega</legend>
+          <div class="row g-3">
+            <div class="col-12 col-md-8">
+              <label for="rua" class="form-label">Rua e número</label>
+              <input type="text" class="form-control" id="rua" name="rua" required>
+            </div>
+            <div class="col-12 col-md-4">
+              <label for="bairro" class="form-label">Bairro</label>
+              <input type="text" class="form-control" id="bairro" name="bairro" required>
+            </div>
+          </div>
+        </fieldset>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Fazer pedido</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

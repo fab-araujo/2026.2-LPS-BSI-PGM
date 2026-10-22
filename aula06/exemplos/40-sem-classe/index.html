@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — campos obrigatórios, sem classe de estado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <main class="container py-4">
+      <h1 class="h3 mb-5">Fazer o pedido</h1>
+      <form class="row g-3">
+        <div class="col-12 col-md-6">
+          <label for="nome" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="nome" name="nome" value="Maria da Silva" required>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="horario" class="form-label">Horário</label>
+          <select class="form-select" id="horario" name="horario" required>
+            <option value="">Escolha um horário</option>
+            <option>Sexta-feira, das 8h às 10h</option>
+            <option>Sexta-feira, das 10h às 12h</option>
+            <option>Sexta-feira, das 14h às 16h</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="termos" name="termos" required>
+            <label class="form-check-label" for="termos">Li e aceito as regras da feira</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Fazer pedido</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

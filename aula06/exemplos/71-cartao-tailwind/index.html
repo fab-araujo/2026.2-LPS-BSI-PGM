@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — o cartão em Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.3"></script>
+    <link rel="stylesheet" href="tokens.css">
+  </head>
+  <body class="bg-(--cor-fundo) text-(--cor-texto)">
+    <main class="p-3">
+      <h1 class="mb-3 text-2xl font-bold">Produtos da semana</h1>
+      <article class="flex items-center gap-4 rounded-xl border
+        border-(--cor-borda) p-4">
+        <img src="acai-336.jpg" alt="Tigela de açaí"
+          class="rounded-xl" width="112" height="112">
+        <div>
+          <h2 class="text-xl font-medium">Açaí médio</h2>
+          <p class="mt-1 text-(--cor-texto-suave)">
+            Sítio Boa Vista, Colônia do Uraim</p>
+          <p class="mt-1 font-bold">R$ 12,00 o litro</p>
+          <button type="button" class="mt-2 rounded-xl
+            bg-(--cor-marca) px-3 py-1.5
+            text-(--cor-sobre-marca)">Adicionar</button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

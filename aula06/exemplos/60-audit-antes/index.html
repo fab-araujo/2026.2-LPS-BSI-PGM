@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — produtos e estoque</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Principal">
+        <div class="container">
+          <a class="navbar-brand" href="#">AgroFeira</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Estoque</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container py-4">
+      <h1 class="h3 mb-3">Produtos da semana</h1>
+      <form class="row g-3 mb-4">
+        <div class="col-12 col-md-6">
+          <input class="form-control" type="search" name="busca"
+            placeholder="Buscar produto" aria-label="Buscar produto">
+        </div>
+        <div class="col-12 col-md-6">
+          <select class="form-select" name="produtor" aria-label="Produtor">
+            <option value="">Todos os produtores</option>
+            <option>Sítio Boa Vista</option>
+            <option>Colônia do Uraim</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Filtrar</button>
+        </div>
+      </form>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card">
+            <img src="acai.jpg" class="card-img-top img-fluid" width="640" height="480"
+              alt="...">
+            <div class="card-body">
+              <p class="badge text-bg-success">Safra nova</p>
+              <h2 class="card-title h5">Açaí médio</h2>
+              <p class="card-text text-body-secondary">Sítio Boa Vista, Colônia do Uraim</p>
+              <p class="card-text fw-bold">R$ 12,00 o litro</p>
+              <button type="button" class="btn btn-outline-secondary"
+                data-bs-toggle="modal" data-bs-target="#detalhe-acai">Ver detalhes</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-8">
+          <table class="table align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Estoque</th>
+                <th scope="col">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Açaí médio</th>
+                <td>24 L</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    Editar
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    Remover
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Farinha d'água</th>
+                <td>40 kg</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    Editar
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    Remover
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Banana-prata</th>
+                <td>15 cx</td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    Editar
+                  </button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">
+                    Remover
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <div class="modal fade" id="detalhe-acai" tabindex="-1" role="dialog" aria-labelledby="detalhe-acai-titulo">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="detalhe-acai-titulo">Açaí médio</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="acai.jpg" class="img-fluid mb-3" width="640" height="480"
+              alt="...">
+            <p class="text-body-secondary mb-1">Sítio Boa Vista, Colônia do Uraim</p>
+            <p class="fw-bold">R$ 12,00 o litro</p>
+            <p class="mb-0">Açaí médio batido na hora, grosso, sem açúcar e sem corante.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

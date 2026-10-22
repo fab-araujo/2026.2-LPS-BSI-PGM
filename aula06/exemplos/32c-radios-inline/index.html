@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — botões de escolha lado a lado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <main class="container py-4">
+      <h1 class="h3 mb-5">Filtros do catálogo</h1>
+      <search>
+        <form>
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="disponivel" name="disponivel">
+            <label class="form-check-label" for="disponivel">Só disponíveis agora</label>
+          </div>
+          <fieldset class="mb-3">
+            <legend class="h6">Ordenar por</legend>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="ordem-preco" name="ordem"
+                value="preco" checked>
+              <label class="form-check-label" for="ordem-preco">Menor preço</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" id="ordem-nome" name="ordem"
+                value="nome">
+              <label class="form-check-label" for="ordem-nome">Nome do produto</label>
+            </div>
+          </fieldset>
+          <button type="submit">Filtrar</button>
+        </form>
+      </search>
+    </main>
+  </body>
+</html>

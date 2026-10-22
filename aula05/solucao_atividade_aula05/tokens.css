@@ -1,0 +1,76 @@
+@layer base {
+  /* tokens.css — as decisões visuais da AgroFeira.
+   Paleta do açaí: marca roxa e fundo lilás claro. O site é claro.
+   Contraste medido no painel de estilos (Chrome), no endereço público. */
+
+  :root {
+    /* Cores */
+    --cor-fundo: #ece3f5;
+    --cor-superficie: #ffffff;
+    --cor-texto: #231a2d;
+    /* 13,42:1 sobre o fundo (AAA); 16,7:1 sobre a superfície (AAA) */
+    --cor-texto-suave: #4e3d5e;
+    /* 7,83:1 sobre o fundo (AAA) */
+    --cor-marca: #5b2a86;
+    /* 7,95:1 sobre o fundo (AAA) */
+    --cor-sobre-marca: #ffffff;
+    /* 9,9:1 sobre a marca (AAA) */
+    --cor-borda: #cdbfdd;
+    --cor-marca-forte: #3f1b61;
+    /* fundo do botão no :hover; 13,62:1 com o texto sobre a marca */
+    --cor-marca-rgb: 91, 42, 134; /* cópia de --cor-marca, em três números */
+    --cor-marca-forte-rgb: 63, 27, 97; /* cópia de --cor-marca-forte, em três números */
+    --cor-foco: #1d4ed8;
+    /* anel de foco; 5,38:1 sobre o fundo e 6,7:1 sobre a superfície */
+
+    /* Letras: o texto na do sistema; os títulos na Lora, do Google Fonts */
+    --fonte-texto: system-ui, sans-serif;
+    --fonte-titulo: "Lora", serif;
+
+    /* Escala dos títulos: multiplicador 1,25; cada degrau é o anterior vezes 1,25
+     1 × 1,25 = 1,25 · 1,25 × 1,25 = 1,563 · 1,563 × 1,25 = 1,953 */
+    --tamanho-texto: 1rem;
+    --tamanho-h3: 1.25rem;
+    --tamanho-h2: 1.563rem;
+    --tamanho-h1: 1.953rem;
+
+    /* Ritmo vertical */
+    --espaco-1: 0.5rem;
+    --espaco-2: 1rem;
+    --espaco-3: 1.5rem;
+    --espaco-4: 2rem;
+
+    /* Cantos e sombra */
+    --raio: 12px;
+    --sombra: 0 2px 6px rgb(0 0 0 / 15%);
+  }
+
+  /* Os campos, a barra de rolagem e as cores de fábrica acompanham o tema */
+  :root {
+    color-scheme: light dark;
+  }
+
+  /* Tema escuro: os mesmos nomes, outros valores */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cor-fundo: #1c1426;
+      --cor-superficie: #2a1f38;
+      --cor-texto: #f1eaf8;
+      /* 15,17:1 sobre o fundo; 13,21:1 sobre a superfície */
+      --cor-texto-suave: #cbbbdd;
+      /* 9,92:1 sobre o fundo */
+      --cor-marca: #c9a8ef;
+      /* 8,77:1 sobre o fundo */
+      --cor-sobre-marca: #1c1426;
+      /* 8,77:1 sobre a marca */
+      --cor-borda: #4b3b5f;
+      --cor-marca-forte: #e0cbf7;
+      /* 11,93:1 com o texto sobre a marca */
+      --cor-marca-rgb: 201, 168, 239; /* cópia de --cor-marca, em três números */
+      --cor-marca-forte-rgb: 224, 203, 247; /* cópia de --cor-marca-forte, em três números */
+      --cor-foco: #93c5fd;
+      /* 9,89:1 sobre o fundo; 8,61:1 sobre a superfície */
+    }
+  }
+
+}

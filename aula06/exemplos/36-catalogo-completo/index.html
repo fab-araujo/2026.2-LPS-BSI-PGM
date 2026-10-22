@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — catálogo em Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="agrofeira-bootstrap.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Principal">
+        <div class="container">
+          <a class="navbar-brand" href="#">AgroFeira</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Produtores</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container py-4">
+      <h1 class="mb-4">Produtos da semana</h1>
+      <search class="mb-4">
+        <form class="row g-3">
+          <div class="col-12 col-md-5">
+            <label for="busca" class="form-label">Buscar produto</label>
+            <input type="search" class="form-control" id="busca" name="q">
+          </div>
+          <div class="col-12 col-md-4">
+            <label for="produtor" class="form-label">Produtor</label>
+            <select class="form-select" id="produtor" name="produtor">
+              <option value="">Todos</option>
+              <option>Sítio Boa Vista</option>
+              <option>Casa de Farinha São José</option>
+              <option>Horta da Dona Rosa</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-3">
+            <label for="preco" class="form-label">Preço máximo</label>
+            <div class="input-group">
+              <span class="input-group-text" id="moeda">R$</span>
+              <input type="number" class="form-control" id="preco" name="preco" min="0" step="0.01"
+                  aria-describedby="moeda">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="disponivel" name="disponivel">
+              <label class="form-check-label" for="disponivel">Só disponíveis agora</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+          </div>
+        </form>
+      </search>
+      <ul class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 list-unstyled">
+        <li class="col">
+          <article class="card h-100">
+            <img src="acai.jpg" class="card-img-top img-fluid" width="640" height="480"
+              alt="Tigela de açaí batido, com duas colheres de plástico">
+            <div class="card-body">
+              <p class="badge text-bg-success">Safra nova</p>
+              <h2 class="card-title h5">Açaí médio</h2>
+              <p class="card-text text-body-secondary">Sítio Boa Vista, Colônia do Uraim</p>
+              <p class="card-text fw-bold">R$ 12,00 o litro</p>
+              <button type="button" class="btn btn-primary">Adicionar</button>
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#detalhe-acai">Ver detalhes</button>
+            </div>
+          </article>
+        </li>
+        <li class="col">
+          <article class="card h-100">
+            <img src="farinha.jpg" class="card-img-top img-fluid" width="640" height="480"
+              alt="Pote de farinha de mandioca sobre a mesa">
+            <div class="card-body">
+              <h2 class="card-title h5">Farinha d'água</h2>
+              <p class="card-text text-body-secondary">Casa de Farinha São José, Comunidade Nova Vida</p>
+              <p class="card-text fw-bold">R$ 90,00 a lata</p>
+              <button type="button" class="btn btn-primary">Adicionar</button>
+            </div>
+          </article>
+        </li>
+        <li class="col">
+          <article class="card h-100">
+            <img src="banana.jpg" class="card-img-top img-fluid" width="640" height="480"
+              alt="Cachos de banana empilhados numa banca de feira">
+            <div class="card-body">
+              <h2 class="card-title h5">Banana-prata</h2>
+              <p class="card-text text-body-secondary">Sítio Três Irmãos, Colônia do Uraim</p>
+              <p class="card-text fw-bold">R$ 8,00 a dúzia</p>
+              <button type="button" class="btn btn-primary">Adicionar</button>
+            </div>
+          </article>
+        </li>
+        <li class="col">
+          <article class="card h-100">
+            <img src="pimenta.jpg" class="card-img-top img-fluid" width="640" height="480"
+              alt="Grãos de pimenta-do-reino espalhados num prato branco">
+            <div class="card-body">
+              <h2 class="card-title h5">Pimenta-do-reino</h2>
+              <p class="card-text text-body-secondary">Sítio Santa Luzia, beira do rio Capim</p>
+              <p class="card-text fw-bold">R$ 30,00 o quilo</p>
+              <button type="button" class="btn btn-primary">Adicionar</button>
+            </div>
+          </article>
+        </li>
+        <li class="col">
+          <article class="card h-100">
+            <img src="cacau.jpg" class="card-img-top img-fluid" width="640" height="480"
+              alt="Mãos abrindo um fruto de cacau vermelho, com a polpa branca à mostra">
+            <div class="card-body">
+              <h2 class="card-title h5">Cacau em amêndoa</h2>
+              <p class="card-text text-body-secondary">Sítio Cacau do Capim, beira do rio Capim</p>
+              <p class="card-text fw-bold">R$ 25,00 o quilo</p>
+              <button type="button" class="btn btn-primary">Adicionar</button>
+            </div>
+          </article>
+        </li>
+        <li class="col">
+          <article class="card h-100">
+            <img src="cupuacu-640.jpg" class="card-img-top img-fluid" width="640" height="480"
+              alt="Cupuaçu aberto ao meio, com a polpa branca">
+            <div class="card-body">
+              <h2 class="card-title h5">Polpa de cupuaçu</h2>
+              <p class="card-text text-body-secondary">Sítio Boa Vista, Colônia do Uraim</p>
+              <p class="card-text fw-bold">R$ 22,00 o quilo</p>
+              <button type="button" class="btn btn-primary">Adicionar</button>
+            </div>
+          </article>
+        </li>
+        <li class="col">
+          <article class="card h-100">
+            <img src="jambu.jpg" class="card-img-top img-fluid" width="640" height="480"
+              alt="Flor de jambu, amarela com o centro vermelho">
+            <div class="card-body">
+              <h2 class="card-title h5">Jambu</h2>
+              <p class="card-text text-body-secondary">Horta da Dona Rosa, Colônia do Uraim</p>
+              <p class="card-text fw-bold">R$ 4,00 o maço</p>
+              <button type="button" class="btn btn-primary">Adicionar</button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+    <footer class="container py-4 text-body-secondary">
+      <p>AgroFeira — da roça para a mesa, em Paragominas.</p>
+      <p class="mb-0">Fotos recortadas, via Wikimedia Commons: açaí, Jorge Láscar, CC BY-SA 2.0; farinha, Wagner Tamanaha, CC BY-SA 2.0; banana, Wilfredor, CC0; pimenta-do-reino, Ryan Snyder, CC BY 2.0; cacau, Míriam Ramalho, CC BY 4.0; cupuaçu, BjoernS, CC BY-SA 2.0 DE; jambu, Tuxyso, CC BY-SA 3.0.</p>
+    </footer>
+    <div class="modal fade" id="detalhe-acai" tabindex="-1" role="dialog" aria-labelledby="detalhe-acai-titulo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="detalhe-acai-titulo">Açaí médio</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <img src="acai.jpg" class="img-fluid mb-3" width="640" height="480"
+              alt="Tigela de açaí batido, com duas colheres de plástico">
+            <p class="text-body-secondary mb-1">Sítio Boa Vista, Colônia do Uraim</p>
+            <p class="fw-bold">R$ 12,00 o litro</p>
+            <p class="mb-0">Açaí médio batido na hora, grosso, sem açúcar e
+              sem corante. Vem em pote de um litro, pronto para
+              a tigela ou para acompanhar o peixe.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

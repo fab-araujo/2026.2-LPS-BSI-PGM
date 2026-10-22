@@ -1,0 +1,26 @@
+/* Caso 1 */
+.aviso strong {
+  color: var(--cor-marca);
+}
+
+strong {
+  color: var(--cor-texto-suave);
+}
+
+/* Caso 2 */
+.busca label {
+  color: var(--cor-marca);
+}
+
+label[for] {
+  color: var(--cor-texto-suave);
+}
+
+/* Caso 3 */
+.rodape-site {
+  color: var(--cor-marca);
+}
+
+footer p {
+  color: var(--cor-texto);
+}

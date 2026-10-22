@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — filtros com form-check</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <main class="container py-4">
+      <h1 class="h3 mb-5">Filtros do catálogo</h1>
+      <search>
+        <form>
+          <div class="mb-3">
+            <label for="busca" class="form-label">Buscar produto</label>
+            <input type="search" class="form-control" id="busca" name="q">
+          </div>
+          <div class="mb-3">
+            <label for="produtor" class="form-label">Produtor</label>
+            <select class="form-select" id="produtor" name="produtor">
+              <option value="">Todos</option>
+              <option>Sítio Boa Vista</option>
+              <option>Casa de Farinha São José</option>
+              <option>Horta da Dona Rosa</option>
+            </select>
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="disponivel" name="disponivel">
+            <label class="form-check-label" for="disponivel">Só disponíveis agora</label>
+          </div>
+          <button type="submit">Filtrar</button>
+        </form>
+      </search>
+    </main>
+  </body>
+</html>

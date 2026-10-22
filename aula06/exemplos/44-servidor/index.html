@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — página devolvida com o erro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <main class="container py-4">
+      <h1 class="h3 mb-5">Fazer o pedido</h1>
+      <form class="row g-3" action="enviado.html">
+        <div class="col-12 col-md-6">
+          <label for="nome" class="form-label">Nome completo</label>
+          <input type="text" class="form-control is-valid" id="nome" name="nome" value="Maria da Silva" required>
+          <div class="valid-feedback">Tudo certo!</div>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control is-invalid" id="email" name="email" value="maria@exemplo.com.br"
+            aria-invalid="true" aria-describedby="email-erro" required>
+          <div class="invalid-feedback" id="email-erro">Este e-mail já foi usado em outro pedido desta semana.</div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Fazer pedido</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

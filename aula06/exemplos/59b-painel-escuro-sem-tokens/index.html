@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroFeira — painel do produtor, escuro sem os tokens escuros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="agrofeira-bootstrap.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="sticky-top bg-body-tertiary">
+      <div class="container-fluid d-flex align-items-center py-2">
+        <button class="btn btn-outline-secondary d-lg-none me-3"
+          type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#lateral"
+          aria-controls="lateral">Menu</button>
+        <p class="fw-bold mb-0">AgroFeira · Painel do produtor</p>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <aside class="offcanvas-lg offcanvas-start"
+            tabindex="-1" id="lateral"
+            aria-labelledby="lateral-titulo">
+            <div class="offcanvas-header">
+              <h2 class="offcanvas-title h5"
+                id="lateral-titulo">Painel do produtor</h2>
+              <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#lateral"
+                aria-label="Fechar"></button>
+            </div>
+            <div class="offcanvas-body">
+              <nav aria-label="Painel">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="#">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pedidos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Entregas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Perfil</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+        </div>
+        <main class="col-lg-9">
+          <h1 class="h3 mt-3">Produtos</h1>
+          <nav aria-label="Situação dos produtos">
+            <ul class="nav nav-underline mb-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Todos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Em estoque</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Esgotados</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="table-responsive position-relative" role="region" tabindex="0"
+            aria-label="Estoque da semana">
+            <table class="table table-striped table-hover align-middle text-nowrap caption-top">
+              <caption>Estoque da semana</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Produto</th>
+                  <th scope="col" class="text-end">Estoque</th>
+                  <th scope="col" class="text-end">Preço</th>
+                  <th scope="col">Situação</th>
+                  <th scope="col">Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Açaí médio</th>
+                  <td class="text-end">24 litros</td>
+                  <td class="text-end">R$ 12,00 o litro</td>
+                  <td><span class="badge text-bg-success">À venda</span></td>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Editar<span class="visually-hidden"> Açaí médio</span>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#confirmar-remocao">
+                      Remover<span class="visually-hidden"> Açaí médio</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Farinha d'água</th>
+                  <td class="text-end">12 latas</td>
+                  <td class="text-end">R$ 90,00 a lata</td>
+                  <td><span class="badge text-bg-success">À venda</span></td>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Editar<span class="visually-hidden"> Farinha d'água</span>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm">
+                      Remover<span class="visually-hidden"> Farinha d'água</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Banana-prata</th>
+                  <td class="text-end">40 dúzias</td>
+                  <td class="text-end">R$ 8,00 a dúzia</td>
+                  <td><span class="badge text-bg-success">À venda</span></td>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Editar<span class="visually-hidden"> Banana-prata</span>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm">
+                      Remover<span class="visually-hidden"> Banana-prata</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Pimenta-do-reino</th>
+                  <td class="text-end">3 quilos</td>
+                  <td class="text-end">R$ 30,00 o quilo</td>
+                  <td><span class="badge text-bg-warning">Estoque baixo</span></td>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Editar<span class="visually-hidden"> Pimenta-do-reino</span>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm">
+                      Remover<span class="visually-hidden"> Pimenta-do-reino</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Cacau em amêndoa</th>
+                  <td class="text-end">0 quilos</td>
+                  <td class="text-end">R$ 25,00 o quilo</td>
+                  <td><span class="badge text-bg-danger">Esgotado</span></td>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Editar<span class="visually-hidden"> Cacau em amêndoa</span>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm">
+                      Remover<span class="visually-hidden"> Cacau em amêndoa</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Polpa de cupuaçu</th>
+                  <td class="text-end">18 quilos</td>
+                  <td class="text-end">R$ 22,00 o quilo</td>
+                  <td><span class="badge text-bg-success">À venda</span></td>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Editar<span class="visually-hidden"> Polpa de cupuaçu</span>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm">
+                      Remover<span class="visually-hidden"> Polpa de cupuaçu</span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Jambu</th>
+                  <td class="text-end">15 maços</td>
+                  <td class="text-end">R$ 4,00 o maço</td>
+                  <td><span class="badge text-bg-success">À venda</span></td>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Editar<span class="visually-hidden"> Jambu</span>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm">
+                      Remover<span class="visually-hidden"> Jambu</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="modal fade" id="confirmar-remocao"
+      data-bs-backdrop="static" tabindex="-1"
+      role="dialog" aria-labelledby="confirmar-titulo"
+      aria-describedby="confirmar-texto">
+      <div class="modal-dialog modal-sm
+        modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5"
+              id="confirmar-titulo">Remover produto</h2>
+            <button type="button" class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p id="confirmar-texto" class="mb-0">
+              Remover este produto da lista?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal">Cancelar</button>
+            <button type="button"
+              class="btn btn-danger">Remover</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
