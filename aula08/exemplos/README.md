@@ -41,6 +41,7 @@ Estes exemplos são para **ler e mexer**, não para copiar: no seu site vai só 
 | [`28-if-else`](28-if-else/) | AgroFeira — if else |
 | [`28b-if-else-esgotado`](28b-if-else-esgotado/) | AgroFeira —  if else esgotado |
 | [`29-for`](29-for/) | AgroFeira — for |
+| [`29b-for-com-if`](29b-for-com-if/) | AgroFeira — for com if |
 | [`30-while`](30-while/) | AgroFeira — while |
 | [`31-funcao`](31-funcao/) | AgroFeira — funcao |
 | [`31b-funcao-parametro`](31b-funcao-parametro/) | AgroFeira —  funcao parametro |
