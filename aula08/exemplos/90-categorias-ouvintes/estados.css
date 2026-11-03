@@ -1,0 +1,14 @@
+@layer componentes {
+  .busca {
+    margin-bottom: var(--espaco-2);
+  }
+
+  .busca label {
+    margin-right: var(--espaco-1);
+  }
+
+  #contador {
+    color: var(--cor-texto-suave);
+    min-height: 1.5em;
+  }
+}

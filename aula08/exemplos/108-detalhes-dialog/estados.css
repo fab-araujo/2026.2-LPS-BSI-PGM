@@ -1,0 +1,53 @@
+@layer componentes {
+  .busca {
+    margin-bottom: var(--espaco-2);
+  }
+
+  .busca label {
+    margin-right: var(--espaco-1);
+  }
+
+  #contador {
+    color: var(--cor-texto-suave);
+    min-height: 1.5em;
+  }
+}
+
+@layer componentes {
+  .barra-categorias button[aria-pressed="true"] {
+    background-color: var(--cor-marca-forte);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+@layer componentes {
+  #detalhes {
+    background-color: var(--cor-superficie);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    max-width: min(24rem, 90vw);
+    padding: var(--espaco-2);
+  }
+
+  #detalhes img {
+    border-radius: var(--raio);
+    max-width: 100%;
+    height: auto;
+  }
+
+  #detalhes::backdrop {
+    background-color: rgb(35 26 45 / 60%);
+  }
+
+  #detalhes button {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    border: none;
+    border-radius: var(--raio);
+    margin-top: var(--espaco-1);
+    padding: 0.5em 1em;
+  }
+}
