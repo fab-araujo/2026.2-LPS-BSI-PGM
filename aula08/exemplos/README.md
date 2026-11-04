@@ -97,3 +97,5 @@ Estes exemplos são para **ler e mexer**, não para copiar: no seu site vai só 
 | [`96-catalogo-vivo`](96-catalogo-vivo/) | O catálogo vivo |
 | [`97-carrinho-botao`](97-carrinho-botao/) | O contador do carrinho |
 | [`98-clique-sobe`](98-clique-sobe/) | O clique sobe pelos pais |
+| [`99-tres-formas`](99-tres-formas/) | As três formas de JavaScript |
+| [`99b-erro-numa-linha`](99b-erro-numa-linha/) | Um erro numa linha (de propósito: `naoExiste()` no `js/aula8.js`, e a página continua inteira) |

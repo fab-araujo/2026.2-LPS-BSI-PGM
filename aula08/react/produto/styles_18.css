@@ -1,0 +1,10 @@
+.produto {
+  border: 1px solid #cdbfdd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #ffffff;
+}
+.produto h3 {
+  color: #5b2a86;
+}
